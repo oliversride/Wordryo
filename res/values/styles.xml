@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="AppTheme" parent="Theme.Sherlock">
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="android:actionBarStyle">@style/Widget.Styled.ActionBar</item>
+    </style>
+    <style name="Widget.Styled.ActionBar" parent="Widget.Sherlock.ActionBar">
+        <item name="background">@color/sherlock</item>
+        <item name="android:background">@color/sherlock</item>
+        <item name="displayOptions">showCustom</item>
+        <item name="android:displayOptions">showCustom</item>
+        <item name="customNavigationLayout">@layout/logo</item>
+        <item name="android:customNavigationLayout">@layout/logo</item>
+    </style>
+    
+    <style name="PreferencesTheme" parent="Theme.Sherlock">
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBarPrefs</item>
+        <item name="android:actionBarStyle">@style/Widget.Styled.ActionBarPrefs</item>
+        <item name="android:buttonStyle">@style/ButtonPrefs</item>
+        </style>
+    <style name="Widget.Styled.ActionBarPrefs" parent="Widget.Sherlock.ActionBar">
+        <item name="background">@color/sherlock</item>
+        <item name="android:background">@color/sherlock</item>
+    </style>
+    
+    <style name="ButtonPrefs" parent="@android:style/Widget.Button">
+        <item name="android:tint">#FF000000</item>
+    </style>
+    
+    <style name="ButtonCommit" parent="@android:style/Widget.Button">
+        <item name="android:background">@color/grid</item>
+    </style>
+
+    <style name="LookUp" parent="@android:style/Widget.AbsListView">
+        <item name="android:background">@color/kik_topdarkgrey</item>
+
+    </style>
+    
+    <style name="config_separator">
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:layout_width">fill_parent</item>
+      <item name="android:gravity">left</item>
+      <item name="android:background">#FF7F7F7F</item>
+      <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+
+    <style name="role_config_hint">
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:layout_width">wrap_content</item>
+      <item name="android:layout_marginLeft">20dip</item>
+      <item name="android:layout_marginRight">20dip</item>
+      <item name="android:gravity">left</item>
+      <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+
+    <style name="color_seek_bar">
+      <item name="android:layout_width">wrap_content</item>
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:layout_gravity">left|center_vertical</item>
+      <item name="android:max">255</item>
+      <item name="android:layout_weight">1</item>
+      <item name="android:paddingRight">8dp</item>
+      <item name="android:paddingLeft">8dp</item>
+    </style>
+
+    <style name="color_edit_text">
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:layout_width">wrap_content</item>
+      <item name="android:layout_gravity">right|center_vertical</item>
+      <item name="android:numeric">decimal</item>
+      <item name="android:maxLength">3</item>
+      <item name="android:includeFontPadding">false</item>
+      <item name="android:ems">3</item>
+    </style>
+
+    <style name="toolbar_button">
+      <item name="android:layout_width">58dp</item>
+      <item name="android:layout_height">48dp</item>
+      <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="about_items">
+      <item name="android:layout_marginLeft">5sp</item>
+      <item name="android:layout_marginTop">5sp</item>
+      <item name="android:layout_marginBottom">5sp</item>
+      <item name="android:layout_width">fill_parent</item>
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+
+    <style name="relay_explain">
+      <item name="android:layout_width">fill_parent</item>
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:paddingLeft">12dp</item>
+      <item name="android:layout_marginTop">3sp</item>
+      <item name="android:layout_marginBottom">3sp</item>
+    </style>
+
+    <style name="spaced_buttons">
+      <item name="android:layout_width">fill_parent</item>
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:layout_weight">1</item>
+    </style>
+
+</resources>
+
