@@ -39,6 +39,7 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.FloatMath;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
@@ -284,7 +285,7 @@ public class BoardView extends RelativeLayout implements DrawCtx, BoardHandler,
             mInMove = false;
             mInGrid = (mDownYY < mTrayTop);
             final boolean belowTiles = mTrayTop+mTrayHt <= yy && yy <= getHeight();
-            if (belowTiles) yy = yy - mInMoveOffset;
+            if (belowTiles) yy = yy - mInMoveOffset;  // Helps pick up from below rack.
             if ( !ConnStatusHandler.handleDown( xx, yy ) ) {
                 m_jniThread.handle( JNIThread.JNICmd.CMD_PEN_DOWN, xx, yy );
             }
@@ -294,12 +295,16 @@ public class BoardView extends RelativeLayout implements DrawCtx, BoardHandler,
             } else if ( MULTI_INACTIVE == m_lastSpacing ) {
             	final int deltaX = mDownXX - xx;
             	final int deltaY = mDownYY - yy;
-            	if (!mInMove){
+            	if ( !mInMove ){
                 	mInMove = (Math.abs(deltaX) > mTouchSlop) || (deltaY > mTouchSlop);
             	}
             	mInGrid = (yy < mTrayTop);
-            	if (mInMove) yy = yy - mInMoveOffset;
-                m_jniThread.handle( JNIThread.JNICmd.CMD_PEN_MOVE, xx, yy );
+            	// Want to scroll board if tile touches edge of visible board.
+            	final boolean atEdgeX = (xx - m_rDragView.width()/2 < 0) || (xx + m_rDragView.width()/2) > getWidth();
+            	final boolean atEdgeY = (yy - mInMoveOffset - m_rDragView.height()/2 < mScoreHt) ||
+            			(yy - mInMoveOffset + m_rDragView.height()/2 > mTrayTop);
+            	final boolean scrollBoard = atEdgeX || atEdgeY;
+                m_jniThread.handle( JNIThread.JNICmd.CMD_PEN_MOVE, xx, yy, mInMoveOffset, scrollBoard );
                 mMoveXX = xx;
                 mMoveYY = yy;
                 updateDragView(DRAG_VIEW_NO_CHANGE);
@@ -317,8 +322,7 @@ public class BoardView extends RelativeLayout implements DrawCtx, BoardHandler,
                                                               m_connType );
                 m_parent.showOKOnlyDialog( msg );
             } else {
-            	if (mInMove) yy = yy - mInMoveOffset;
-                m_jniThread.handle( JNIThread.JNICmd.CMD_PEN_UP, xx, yy );
+                m_jniThread.handle( JNIThread.JNICmd.CMD_PEN_UP, xx, yy, mInMoveOffset );
                 mInMove = false;
                 mInGrid = false;
                 updateDragView(DRAG_VIEW_HIDE);
@@ -326,8 +330,7 @@ public class BoardView extends RelativeLayout implements DrawCtx, BoardHandler,
             break;
         case MotionEvent.ACTION_POINTER_DOWN:
         case MotionEvent.ACTION_POINTER_2_DOWN:
-        	if (mInMove) yy = yy - mInMoveOffset;
-            m_jniThread.handle( JNIThread.JNICmd.CMD_PEN_UP, xx, yy );
+            m_jniThread.handle( JNIThread.JNICmd.CMD_PEN_UP, xx, yy, mInMoveOffset );
             m_lastSpacing = getSpacing( event );
             break;
         case MotionEvent.ACTION_POINTER_UP:
@@ -346,6 +349,84 @@ public class BoardView extends RelativeLayout implements DrawCtx, BoardHandler,
 
         return true;             // required to get subsequent events
     }
+// Old way...
+//    @Override
+//    public boolean onTouchEvent( MotionEvent event ) 
+//    {
+//        int action = event.getAction();
+//        int xx = (int)event.getX();
+//        int yy = (int)event.getY();
+//        
+//        switch ( action ) {
+//        case MotionEvent.ACTION_DOWN:
+//        	mDownXX = xx;
+//        	mDownYY = yy;
+//            m_lastSpacing = MULTI_INACTIVE;
+//            mInMove = false;
+//            mInGrid = (mDownYY < mTrayTop);
+//            final boolean belowTiles = mTrayTop+mTrayHt <= yy && yy <= getHeight();
+//            if (belowTiles) yy = yy - mInMoveOffset;
+//            if ( !ConnStatusHandler.handleDown( xx, yy ) ) {
+//                m_jniThread.handle( JNIThread.JNICmd.CMD_PEN_DOWN, xx, yy );
+//            }
+//            break;
+//        case MotionEvent.ACTION_MOVE:
+//            if ( ConnStatusHandler.handleMove( xx, yy ) ) {
+//            } else if ( MULTI_INACTIVE == m_lastSpacing ) {
+//            	final int deltaX = mDownXX - xx;
+//            	final int deltaY = mDownYY - yy;
+//            	if ( !mInMove ){
+//                	mInMove = (Math.abs(deltaX) > mTouchSlop) || (deltaY > mTouchSlop);
+//            	}
+//            	mInGrid = (yy < mTrayTop);
+//            	if (mInMove) yy = yy - mInMoveOffset;
+//                m_jniThread.handle( JNIThread.JNICmd.CMD_PEN_MOVE, xx, yy );
+//                mMoveXX = xx;
+//                mMoveYY = yy;
+//                updateDragView(DRAG_VIEW_NO_CHANGE);
+//            } else {
+//                int zoomBy = figureZoom( event );
+//                if ( 0 != zoomBy ) {
+//                    m_jniThread.handle( JNIThread.JNICmd.CMD_ZOOM, 
+//                                        zoomBy < 0 ? -2 : 2 );
+//                }
+//            }
+//            break;
+//        case MotionEvent.ACTION_UP:
+//            if ( ConnStatusHandler.handleUp( xx, yy ) ) {
+//                String msg = ConnStatusHandler.getStatusText( m_context,
+//                                                              m_connType );
+//                m_parent.showOKOnlyDialog( msg );
+//            } else {
+//            	if (mInMove) yy = yy - mInMoveOffset;
+//                m_jniThread.handle( JNIThread.JNICmd.CMD_PEN_UP, xx, yy );
+//                mInMove = false;
+//                mInGrid = false;
+//                updateDragView(DRAG_VIEW_HIDE);
+//            }
+//            break;
+//        case MotionEvent.ACTION_POINTER_DOWN:
+//        case MotionEvent.ACTION_POINTER_2_DOWN:
+//        	if (mInMove) yy = yy - mInMoveOffset;
+//            m_jniThread.handle( JNIThread.JNICmd.CMD_PEN_UP, xx, yy );
+//            m_lastSpacing = getSpacing( event );
+//            break;
+//        case MotionEvent.ACTION_POINTER_UP:
+//        case MotionEvent.ACTION_POINTER_2_UP:
+//            m_lastSpacing = MULTI_INACTIVE;
+//            break;
+//        case MotionEvent.ACTION_CANCEL:
+//        	mInMove = false;
+//        	mInGrid = false;
+//        	updateDragView(DRAG_VIEW_HIDE);
+//        	break;
+//        default:
+//            DbgUtils.logf( "onTouchEvent: unknown action: %d", action );
+//            break;
+//        }
+//
+//        return true;             // required to get subsequent events
+//    }
 
     // private void printMode( String comment, int mode )
     // {
@@ -533,6 +614,7 @@ public class BoardView extends RelativeLayout implements DrawCtx, BoardHandler,
       }
         
         mInMoveOffset = (int) (IN_MOVE_OFFSET * result.cellSize);
+        mScoreHt = result.scoreHt;
         mTrayTop = result.trayTop;
         mTrayHt = result.trayHt;
         return result;
@@ -1637,7 +1719,7 @@ public class BoardView extends RelativeLayout implements DrawCtx, BoardHandler,
 		} else {
 			final int w2 = m_rDragView.width() / 2;
 			final int h2 = m_rDragView.height() / 2;
-			mDragView.layout(mMoveXX - w2, mMoveYY - h2, mMoveXX + w2, mMoveYY + h2);							
+			mDragView.layout(mMoveXX - w2, mMoveYY - mInMoveOffset - h2, mMoveXX + w2, mMoveYY - mInMoveOffset + h2);							
 		}
 		// Commit
 		if (null == mCommitView){
@@ -1737,6 +1819,7 @@ public class BoardView extends RelativeLayout implements DrawCtx, BoardHandler,
     private int mTouchSlop = 0;
     private int mDownXX = 0;
     private int mDownYY = 0;
+    private int mScoreHt = 0;
     private int mTrayTop = 0;
     private int mTrayHt;
     private int mMoveXX;

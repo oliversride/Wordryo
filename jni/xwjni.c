@@ -62,6 +62,7 @@ makeGI( MPFORMAL JNIEnv* env, jobject j_gi )
 
     gi->dictLang = getInt( env, j_gi, "dictLang" );
     gi->hintsNotAllowed = getBool( env, j_gi, "hintsNotAllowed" );
+    gi->zoomOnDrop = getBool( env, j_gi, "zoomOnDrop" );
     gi->timerEnabled =  getBool( env, j_gi, "timerEnabled" );
     gi->allowPickTiles = getBool( env, j_gi, "allowPickTiles" );
     gi->allowHintRect = getBool( env, j_gi, "allowHintRect" );
@@ -121,6 +122,7 @@ setJGI( JNIEnv* env, jobject jgi, const CurGameInfo* gi )
     setInt( env, jgi, "gameID", gi->gameID );
     setInt( env, jgi, "dictLang", gi->dictLang );
     setBool( env, jgi, "hintsNotAllowed", gi->hintsNotAllowed );
+    setBool( env, jgi, "zoomOnDrop", gi->zoomOnDrop );
     setBool( env, jgi, "timerEnabled", gi->timerEnabled );
     setBool( env, jgi, "allowPickTiles", gi->allowPickTiles );
     setString( env, jgi, "dictName", gi->dictName );
@@ -655,22 +657,22 @@ Java_com_oliversride_wordryo_jni_XwJNI_board_1handlePenDown
 
 JNIEXPORT jboolean JNICALL
 Java_com_oliversride_wordryo_jni_XwJNI_board_1handlePenMove
-( JNIEnv *env, jclass C, jint gamePtr, jint xx, jint yy )
+( JNIEnv *env, jclass C, jint gamePtr, jint xx, jint yy, jint offset, jboolean scrollBoard )
 {
     jboolean result;
     XWJNI_START();
-    result = board_handlePenMove( state->game.board, xx, yy );
+    result = board_handlePenMove( state->game.board, xx, yy, offset, scrollBoard );
     XWJNI_END();
     return result;
 }
 
 JNIEXPORT jboolean JNICALL
 Java_com_oliversride_wordryo_jni_XwJNI_board_1handlePenUp
-( JNIEnv *env, jclass C, jint gamePtr, jint xx, jint yy )
+( JNIEnv *env, jclass C, jint gamePtr, jint xx, jint yy, jint offset )
 {
     jboolean result;
     XWJNI_START();
-    result = board_handlePenUp( state->game.board, xx, yy );
+    result = board_handlePenUp( state->game.board, xx, yy, offset );
     XWJNI_END();
     return result;
 }

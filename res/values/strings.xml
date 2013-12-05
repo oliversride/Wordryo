@@ -29,6 +29,8 @@
     <string name="str_must_start_on_star">Start on the star. (It\'s a double word score.)</string>
     <string name="str_tiles_must_contact">New pieces must contact
          others already in place.</string>
+    <string name="zoom_on_drop">Zoom start</string>
+    <string name="zoom_summary">Zoom in when starting a new word</string>
     
     <!-- Title of submenu -->
     <string name="board_submenu_game">Game info</string>

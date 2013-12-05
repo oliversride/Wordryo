@@ -30,8 +30,8 @@ extern "C" {
 # define SCROLL_DRAG_THRESHHOLD 1
 #endif
 
-static XP_Bool dragDropContinueImpl( BoardCtxt* board, XP_U16 xx, XP_U16 yy,
-                                     BoardObjectType* onWhichP );
+static XP_Bool dragDropContinueImpl( BoardCtxt* board, XP_U16 xx, XP_U16 yy, XP_U16 offset,
+									 XP_Bool scrollBoard, BoardObjectType* onWhichP );
 static void invalDragObjRange( BoardCtxt* board, const DragObjInfo* from, 
                                const DragObjInfo* to );
 #ifdef XWFEATURE_SEARCHLIMIT
@@ -48,7 +48,8 @@ static void crosshairs_clear( BoardCtxt* board );
 # define crosshairs_clear( board )
 #endif
 
-static void startScrollTimerIf( BoardCtxt* board );
+static void startScrollTimerIf( BoardCtxt* board, XP_Bool scrollBoardOn );
+static XP_Bool mBoardScrollOn = XP_FALSE;
 
 XP_Bool
 dragDropInProgress( const BoardCtxt* board )
@@ -206,7 +207,7 @@ dragDropStart( BoardCtxt* board, BoardObjectType obj, XP_U16 x, XP_U16 y )
     if ( result ) {
         ds->cur = ds->start;
         invalDragObj( board, &ds->start );
-        startScrollTimerIf( board );
+        startScrollTimerIf( board, XP_TRUE );
     }
 
     return result;
@@ -228,22 +229,24 @@ dragDropStart( BoardCtxt* board, BoardObjectType obj, XP_U16 x, XP_U16 y )
  * just change it every time we can.
  */
 XP_Bool
-dragDropContinue( BoardCtxt* board, XP_U16 xx, XP_U16 yy )
+dragDropContinue( BoardCtxt* board, XP_U16 xx, XP_U16 yy, XP_U16 offset, XP_Bool scrollBoard )
 {
     XP_ASSERT( dragDropInProgress(board) );
 
-    return dragDropContinueImpl( board, xx, yy, NULL );
+    return dragDropContinueImpl( board, xx, yy, offset, scrollBoard, NULL );
 }
 
 XP_Bool
-dragDropEnd( BoardCtxt* board, XP_U16 xx, XP_U16 yy, XP_Bool* dragged )
+dragDropEnd( BoardCtxt* board, XP_U16 xx, XP_U16 yy, XP_Bool* dragged, XP_Bool* trayToBoard )
 {
     DragState* ds = &board->dragState;
     BoardObjectType newObj;
 
     XP_ASSERT( dragDropInProgress(board) );
 
-    (void)dragDropContinueImpl( board, xx, yy, &newObj );
+    *trayToBoard = XP_FALSE;
+
+    (void)dragDropContinueImpl( board, xx, yy, 0, XP_TRUE, &newObj );
     *dragged = ds->didMove;
 
     /* If we've dropped on something, put the tile there!  Since we
@@ -291,10 +294,13 @@ dragDropEnd( BoardCtxt* board, XP_U16 xx, XP_U16 yy, XP_Bool* dragged )
                     !cellOccupied( board, ds->cur.u.board.col, 
                                    ds->cur.u.board.row, XP_TRUE ) ) {
             if ( ds->start.obj == OBJ_TRAY ) {
+
                 /* moveTileToBoard flips its inputs */
                 (void)moveTileToBoard( board, ds->cur.u.board.col, 
                                        ds->cur.u.board.row,
                                        ds->start.u.tray.index, EMPTY_TILE );
+                // Tile moved from tray to board.
+                *trayToBoard = XP_TRUE;
             } else if ( ds->start.obj == OBJ_BOARD ) {
                 XP_U16 mod_curc, mod_curr;
                 flipIf( board, ds->cur.u.board.col, ds->cur.u.board.row,
@@ -336,7 +342,7 @@ dragDropSetAdd( BoardCtxt* board )
         if ( draw ) {
             ds->yyAdd = (board->trayBounds.height * 2) / 3;
             draw = dragDropContinueImpl( board, board->penDownX, 
-                                         board->penDownY, NULL );
+                                         board->penDownY, 0, XP_TRUE, NULL );
         }
     }
     return draw;
@@ -471,7 +477,7 @@ invalHintRectDiffs( BoardCtxt* board, const DragObjInfo* cur,
 #endif
 
 static XP_Bool
-dragDropContinueImpl( BoardCtxt* board, XP_U16 xx, XP_U16 yy,
+dragDropContinueImpl( BoardCtxt* board, XP_U16 xx, XP_U16 yy, XP_U16 offset, XP_Bool scrollBoard,
                       BoardObjectType* onWhichP )
 {
     XP_Bool moving = XP_FALSE;
@@ -483,13 +489,18 @@ dragDropContinueImpl( BoardCtxt* board, XP_U16 xx, XP_U16 yy,
     yy -= ds->yyAdd;
 #endif
 
+    if ( ds->dtype == DT_TILE ){
+    	// Offset tiles being dragged so they are easier to see.
+    	yy -= offset;
+    }
+
     (void)pointOnSomething( board, xx, yy, &newInfo.obj );
     if ( !!onWhichP ) {
         *onWhichP = newInfo.obj;
     }
 
     if ( newInfo.obj == OBJ_BOARD ) {
-        (void)coordToCell( board, xx, yy, &newInfo.u.board.col, 
+        (void)coordToCell( board, xx, yy, &newInfo.u.board.col,
                            &newInfo.u.board.row );
 #ifdef XWFEATURE_CROSSHAIRS
         if ( !board->hideCrosshairs ) {
@@ -522,7 +533,6 @@ dragDropContinueImpl( BoardCtxt* board, XP_U16 xx, XP_U16 yy,
             }
             diff /= SCROLL_DRAG_THRESHHOLD;
             moving = adjustXOffset( board, diff );
-
             diff = newInfo.u.board.row - ds->cur.u.board.row;
             if ( !ds->cellChanged && 0 != diff ) {
                 ds->cellChanged = XP_TRUE;
@@ -532,13 +542,12 @@ dragDropContinueImpl( BoardCtxt* board, XP_U16 xx, XP_U16 yy,
         }
     } else if ( ds->dtype == DT_TILE ) {
     	if ( newInfo.obj == OBJ_BOARD ) {
-                 moving = (newInfo.u.board.col != ds->cur.u.board.col)
+    		moving = (newInfo.u.board.col != ds->cur.u.board.col)
                 || (newInfo.u.board.row != ds->cur.u.board.row)
                 || (OBJ_TRAY == ds->cur.obj);
         } else if ( newInfo.obj == OBJ_TRAY ) {
             XP_Bool onDivider;
             XP_S16 index = pointToTileIndex( board, xx, yy, &onDivider );
-            // XP_S16 index = pointToTileIndexW( board, xx, yy, &onDivider );
             if ( !onDivider ) {
                if ( index < 0 ) { /* negative means onto empty part of
                                       tray.  Force left. */
@@ -567,12 +576,19 @@ dragDropContinueImpl( BoardCtxt* board, XP_U16 xx, XP_U16 yy,
                 }
 #endif
             }
-                
             XP_MEMCPY( &ds->cur, &newInfo, sizeof(ds->cur) );
-            startScrollTimerIf( board );
+            startScrollTimerIf( board, scrollBoard );
         }
     } else {
         XP_ASSERT( 0 );
+    }
+
+    // Change?
+    if (mBoardScrollOn != scrollBoard){
+    	// Yes, need this extra kick to get board scrolling going.
+        startScrollTimerIf( board, scrollBoard );
+        // Only do once.
+    	mBoardScrollOn = scrollBoard;
     }
 
     if ( moving ) {
@@ -587,6 +603,8 @@ dragDropContinueImpl( BoardCtxt* board, XP_U16 xx, XP_U16 yy,
             }
 #endif
             ds->didMove = XP_TRUE;
+            // Don't scroll right away; wait until tile touches edge of board.
+            mBoardScrollOn = XP_FALSE;
         }
     }
 
@@ -648,10 +666,11 @@ scrollTimerProc( void* closure, XWTimerReason XP_UNUSED_DBG(why) )
             if ( 0 != changeY ) {
                 ds->cur.u.board.row += (changeY >0 ? 1 : -1);
             }
+
             if ( scrollIntoView( board, ds->cur.u.board.col, 
                                  ds->cur.u.board.row ) ) {
                 board_draw( board ); /* may fail, e.g. on wince */
-                startScrollTimerIf( board );
+                startScrollTimerIf( board, XP_TRUE );
                 draw = XP_TRUE;
             }
         }
@@ -660,7 +679,7 @@ scrollTimerProc( void* closure, XWTimerReason XP_UNUSED_DBG(why) )
 } /* scrollTimerProc */
 
 static void
-startScrollTimerIf( BoardCtxt* board )
+startScrollTimerIf( BoardCtxt* board, XP_Bool scrollBoardOn )
 {
     DragState* ds = &board->dragState;
 
@@ -669,9 +688,11 @@ startScrollTimerIf( BoardCtxt* board )
         if ( onBorderCanScroll( board, SCROLL_H, ds->cur.u.board.col, &ignore )
              || onBorderCanScroll( board, SCROLL_V, ds->cur.u.board.row,
                                    &ignore ) ) {
-            util_setTimer( board->util, TIMER_PENDOWN, 0,
-                           scrollTimerProc, (void*) board );
-            ds->scrollTimerSet = XP_TRUE;
+        	if ( scrollBoardOn ){
+                util_setTimer( board->util, TIMER_PENDOWN, 0,
+                               scrollTimerProc, (void*) board );
+                ds->scrollTimerSet = XP_TRUE;
+        	}
         } else {
             /* ignore if we've moved off */
             ds->scrollTimerSet = XP_FALSE;

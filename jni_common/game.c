@@ -420,6 +420,7 @@ gi_copy( MPFORMAL CurGameInfo* destGI, const CurGameInfo* srcGI )
     destGI->serverRole = srcGI->serverRole;
 
     destGI->hintsNotAllowed = srcGI->hintsNotAllowed;
+    destGI->zoomOnDrop = srcGI->zoomOnDrop;
     destGI->timerEnabled = srcGI->timerEnabled;
     destGI->phoniesAction = srcGI->phoniesAction;
     destGI->allowPickTiles = srcGI->allowPickTiles;
@@ -483,6 +484,7 @@ gi_readFromStream( MPFORMAL XWStreamCtxt* stream, CurGameInfo* gi )
     if ( strVersion < STREAM_VERS_ROBOTIQ ) {
         (void)stream_getBits( stream, 2 );
     }
+    gi->zoomOnDrop = stream_getBits( stream, 1 );
     gi->phoniesAction = (XWPhoniesChoice)stream_getBits( stream, 2 );
     gi->timerEnabled = stream_getBits( stream, 1 );
 
@@ -553,6 +555,7 @@ gi_writeToStream( XWStreamCtxt* stream, const CurGameInfo* gi )
     stream_putBits( stream, nColsNBits, gi->boardSize );
     stream_putBits( stream, 2, gi->serverRole );
     stream_putBits( stream, 1, gi->hintsNotAllowed );
+    stream_putBits( stream, 1, gi->zoomOnDrop );
     stream_putBits( stream, 2, gi->phoniesAction );
     stream_putBits( stream, 1, gi->timerEnabled );
     stream_putBits( stream, 1, gi->allowPickTiles );

@@ -665,6 +665,31 @@ board_zoom( BoardCtxt* board, XP_S16 zoomBy, XP_Bool* canInOut )
 
     return changed;
 } /* board_zoom */
+//
+// Zoom in to (xx, yy).  (Zoom in when user starts building a word.)
+//
+void
+board_zoom_word( BoardCtxt* board, XP_U16 xx, XP_U16 yy )
+{
+    XP_U16 col, row;
+    XP_Bool canInOut[2];
+
+    coordToCell( board, xx, yy, &col, &row );
+	board_zoom( board, 2*MAX_BOARD_ZOOM, canInOut );
+	// Adjust so (the first letter) not right at edge of view.
+    scrollIntoView( board, col, row );
+    ScrollData* hsd = &board->sd[SCROLL_H];
+    ScrollData* vsd = &board->sd[SCROLL_V];
+    XP_Bool atLeft = (col <= hsd->offset);
+    XP_Bool atTop = (row <= vsd->offset);
+    XP_Bool atRight = (col > board->gi->boardSize - hsd->offset);
+    XP_Bool atBottom = (row > board->gi->boardSize - vsd->offset);
+    if ( atLeft && col > 0 ) col = col - 1;
+    if ( atTop && row > 0 ) row = row - 1;
+    if ( atRight && col < board->gi->boardSize-1 ) col = col + 1;
+    if ( atBottom && row < board->gi->boardSize-1 ) row = row + 1;
+    scrollIntoView( board, col, row );
+}
 
 #ifdef KEYBOARD_NAV
 /* called by ncurses version only */
@@ -1080,7 +1105,8 @@ timerFiredForPen( BoardCtxt* board )
                             &stuff->closure);
         if ( dragDropInProgress( board ) ) {
             XP_Bool dragged;
-            dragDropEnd( board, board->penDownX, board->penDownY, &dragged );
+            XP_Bool trayToBoard
+            dragDropEnd( board, board->penDownX, board->penDownY, &dragged, &trayToBoard );
             XP_ASSERT( !dragged );
         }
 #endif
@@ -1342,6 +1368,28 @@ scrollIntoView( BoardCtxt* board, XP_U16 col, XP_U16 row )
 
     return moved;
 } /* scrollIntoView */
+XP_Bool
+willScrollIntoViewX( BoardCtxt* board, XP_U16 col)
+{
+    XP_Bool moved;
+    XP_S16 newOffset;
+
+    newOffset = figureOffset( board, SCROLL_H, col );
+    moved = (newOffset != col);
+
+    return moved;
+} /* willScrollIntoViewX */
+XP_Bool
+willScrollIntoViewY( BoardCtxt* board, XP_U16 row )
+{
+    XP_Bool moved;
+    XP_S16 newOffset;
+
+    newOffset = figureOffset( board, SCROLL_V, row );
+    moved = (newOffset != row);
+
+    return moved;
+} /* willScrollIntoViewY */
 
 XP_Bool
 onBorderCanScroll( const BoardCtxt* board, SDIndex indx, 
@@ -2428,10 +2476,10 @@ board_handlePenDown( BoardCtxt* board, XP_U16 x, XP_U16 y, XP_Bool* handled )
 #endif
 
 XP_Bool
-board_handlePenMove( BoardCtxt* board, XP_U16 xx, XP_U16 yy )
+board_handlePenMove( BoardCtxt* board, XP_U16 xx, XP_U16 yy, XP_U16 offset, XP_Bool scrollBoard )
 {
     XP_Bool result = dragDropInProgress(board)
-        && dragDropContinue( board, xx, yy );
+        && dragDropContinue( board, xx, yy, offset, scrollBoard );
     return result;
 } /* board_handlePenMove */
 
@@ -2600,11 +2648,18 @@ penMoved( const BoardCtxt* board, XP_U16 curCol, XP_U16 curRow )
 }
 
 static XP_Bool
-handlePenUpInternal( BoardCtxt* board, XP_U16 xx, XP_U16 yy, XP_Bool isPen )
+handlePenUpInternal( BoardCtxt* board, XP_U16 xx, XP_U16 yy, XP_U16 offset, XP_Bool isPen )
 {
     XP_Bool draw = XP_FALSE;
     XP_Bool dragged = XP_FALSE;
+    XP_Bool trayToBoard = XP_FALSE;
     BoardObjectType prevObj = board->penDownObject;
+    DragState* ds = &board->dragState;
+
+    if ( ds->dtype == DT_TILE ){
+    	// Offset tiles being dragged so they are easier to see.
+    	yy -= offset;
+    }
 
     /* prevent timer from firing after pen lifted.  Set now rather than later
        in case we put up a modal alert/dialog that must be dismissed before
@@ -2612,7 +2667,18 @@ handlePenUpInternal( BoardCtxt* board, XP_U16 xx, XP_U16 yy, XP_Bool isPen )
     board->penDownObject = OBJ_NONE;
 
     if ( dragDropInProgress(board) ) {
-        draw = dragDropEnd( board, xx, yy, &dragged );
+        draw = dragDropEnd( board, xx, yy, &dragged, &trayToBoard );
+    	// Moving a tile from tray to board?
+    	if ( trayToBoard ){
+    		XP_U16 numInTray = model_getNumTilesInTray( board->model, board->selPlayer );
+    		XP_U16 numTotal = model_getNumTilesTotal( board->model, board->selPlayer );
+    		XP_Bool firstDrop = numInTray == (numTotal - 1);
+        	// Starting to build a word and user setting on and not zoomed already?
+        	if ( firstDrop &&  board->gi->zoomOnDrop && 0==board->zoomCount ){
+        		// Zoom board to word.
+        		board_zoom_word( board, xx, yy );
+        	}
+    	}
     }
     if ( dragged ) {
         /* do nothing further */
@@ -2669,9 +2735,9 @@ handlePenUpInternal( BoardCtxt* board, XP_U16 xx, XP_U16 yy, XP_Bool isPen )
 } /* handlePenUpInternal */
 
 XP_Bool
-board_handlePenUp( BoardCtxt* board, XP_U16 x, XP_U16 y )
+board_handlePenUp( BoardCtxt* board, XP_U16 x, XP_U16 y, XP_U16 offset )
 {
-    return handlePenUpInternal( board, x, y, XP_TRUE );
+    return handlePenUpInternal( board, x, y, offset, XP_TRUE );
 }
 #endif /* #ifdef POINTER_SUPPORT */
 
@@ -2879,7 +2945,7 @@ board_handleKeyUp( BoardCtxt* board, XP_Key key, XP_Bool* pHandled )
             if ( board->focusHasDived ) {
                 XP_U16 xx, yy;
                 if ( focusToCoords( board, &xx, &yy ) ) {
-                    redraw = handlePenUpInternal( board, xx, yy, XP_FALSE );
+                    redraw = handlePenUpInternal( board, xx, yy, 0, XP_FALSE );
                     handled = XP_TRUE;
                 }
             } else {

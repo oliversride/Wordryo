@@ -165,9 +165,10 @@ public class XwJNI {
                                                       int xx, int yy, 
                                                       boolean[] handled );
     public static native boolean board_handlePenMove( int gamePtr, 
-                                                      int xx, int yy );
+                                                      int xx, int yy, int inMoveOffset,
+                                                      boolean scrollBoard );
     public static native boolean board_handlePenUp( int gamePtr, 
-                                                    int xx, int yy );
+                                                    int xx, int yy, int inMoveOffset );
 
     public static native boolean board_juggleTray( int gamePtr );
     public static native int board_getTrayVisState( int gamePtr );

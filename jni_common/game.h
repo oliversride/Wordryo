@@ -58,6 +58,7 @@ typedef struct CurGameInfo {
     DeviceRole serverRole;
 
     XP_Bool hintsNotAllowed;
+    XP_Bool zoomOnDrop;
     XP_Bool timerEnabled;
     XP_Bool allowPickTiles;
     XP_Bool allowHintRect;

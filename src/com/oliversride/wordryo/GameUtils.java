@@ -32,9 +32,12 @@ import org.json.JSONObject;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
+import android.preference.PreferenceManager;
 import android.text.Html;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.oliversride.wordryo.jni.CommonPrefs;
 import com.oliversride.wordryo.jni.CommsAddrRec;
@@ -834,4 +837,35 @@ public class GameUtils {
         return result;
     }
 
+    
+    //
+    // +W
+    //
+    
+    public static void saveAndroidGame(Activity activity, long rowid){
+    	final SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences( activity );
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putLong( "rowidandroidgame", rowid );
+        editor.commit();
+    }
+    
+    public static long getAndroidGame(Activity activity){
+    	final SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences( activity );
+    	long rowid = sp.getLong("rowidandroidgame", -1);
+    	return rowid;
+    }
+    
+    public static void savePassAndPlay(Activity activity, long rowid){
+    	final SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences( activity );
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putLong( "rowidpassandplay", rowid );
+        editor.commit();
+    }
+    
+    public static long getPassAndPlay(Activity activity){
+    	final SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences( activity );
+    	long rowid = sp.getLong("rowidpassandplay", -1);
+    	return rowid;
+    }
+    
 }

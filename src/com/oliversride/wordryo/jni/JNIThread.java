@@ -29,8 +29,8 @@ import junit.framework.Assert;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 
-import com.oliversride.wordryo.BoardActivity;
 import com.oliversride.wordryo.BoardDims;
 import com.oliversride.wordryo.ConnStatusHandler;
 import com.oliversride.wordryo.DBUtils;
@@ -426,15 +426,17 @@ public class JNIThread extends Thread {
                     continue;
                 }
                 draw = XwJNI.board_handlePenMove( m_jniGamePtr, 
-                                                  ((Integer)args[0]).intValue(),
-                                                  ((Integer)args[1]).intValue() );
+                        ((Integer)args[0]).intValue(),
+                        ((Integer)args[1]).intValue(),
+                        ((Integer)args[2]).intValue(),
+                        ((Boolean)args[3]).booleanValue() );
                 break;
             case CMD_PEN_UP:
                 draw = XwJNI.board_handlePenUp( m_jniGamePtr, 
-                                                ((Integer)args[0]).intValue(),
-                                                ((Integer)args[1]).intValue() );
+                        ((Integer)args[0]).intValue(),
+                        ((Integer)args[1]).intValue(),
+                        ((Integer)args[2]).intValue() );
                 break;
-
             case CMD_KEYDOWN:
             case CMD_KEYUP:
                 draw = processKeyEvent( elem.m_cmd, (XwJNI.XP_Key)args[0], barr );

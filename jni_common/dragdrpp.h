@@ -33,8 +33,8 @@ XP_Bool dragDropHasMoved( const BoardCtxt* board );
 
 XP_Bool dragDropStart( BoardCtxt* board, BoardObjectType obj,
                        XP_U16 xx, XP_U16 yy );
-XP_Bool dragDropContinue( BoardCtxt* board, XP_U16 xx, XP_U16 yy );
-XP_Bool dragDropEnd( BoardCtxt* board, XP_U16 xx, XP_U16 yy, XP_Bool* dragged );
+XP_Bool dragDropContinue( BoardCtxt* board, XP_U16 xx, XP_U16 yy, XP_U16 offset, XP_Bool scrollBoard );
+XP_Bool dragDropEnd( BoardCtxt* board, XP_U16 xx, XP_U16 yy, XP_Bool* dragged, XP_Bool* trayToBoard );
 
 #ifdef XWFEATURE_RAISETILE
 XP_Bool dragDropSetAdd( BoardCtxt* board );

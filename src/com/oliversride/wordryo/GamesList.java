@@ -34,6 +34,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.MotionEvent;
 import android.view.View;
@@ -435,7 +436,7 @@ public class GamesList extends XWExpandableListActivity
         // mgr.listen( m_phoneStateListener,
         //             PhoneStateListener.LISTEN_DATA_CONNECTION_STATE );
     }
-
+    
     @Override
     protected void onStop()
     {
@@ -450,7 +451,7 @@ public class GamesList extends XWExpandableListActivity
 
     @Override
     protected void onDestroy()
-    {
+    {    	
         DBUtils.clearDBChangeListener( this );
         super.onDestroy();
     }
@@ -1166,6 +1167,7 @@ public class GamesList extends XWExpandableListActivity
     //
     // +W
     //
+    public long mStartTime;
     
 	View.OnTouchListener mTouchListener = new View.OnTouchListener(){
 		@Override
@@ -1223,15 +1225,20 @@ public class GamesList extends XWExpandableListActivity
 			}			
 		}
 	}
-
+ 
+	//
+	// Start Android game.
+	//
 	private void startMeVsAndroid(){
         if ( !m_gameLaunched ) {
+        	mStartTime = System.currentTimeMillis();
             DBUtils.clearDBChangeListener( this );
             deleteExtraGames();
 
         	boolean oldGameRestarted = false;
         	boolean restartGame = false;
-        	
+
+        	// Smartness.
         	final SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences( this );
         	final int androidPlayLevel = Integer.valueOf(sp.getString("androidplaylevel", "0"));
         	int robotIQ;
@@ -1242,14 +1249,21 @@ public class GamesList extends XWExpandableListActivity
         	} else {
         		robotIQ = 1;  // the smartest
         	}
-        	
+        	// Warn unknown words (not in build-in dictionary).
         	final boolean wornUnknown = sp.getBoolean("warnunknownword", false);
         	CurGameInfo.XWPhoniesChoice phoniesAction = CurGameInfo.XWPhoniesChoice.PHONIES_IGNORE;
         	if (wornUnknown){
         		phoniesAction = CurGameInfo.XWPhoniesChoice.PHONIES_WARN;
         	}
+        	// Zoom on drop.
+        	final boolean zoomOnDrop = sp.getBoolean("zoomondrop", false);
+
+        	//
+        	// Try to restart quickly.
+        	//
+        	oldGameRestarted = restartAndroidGame(robotIQ, zoomOnDrop, phoniesAction);
         	
-        	if (null != m_adapter){
+        	if (null != m_adapter && !oldGameRestarted ){
         		final int newGamesGroup = 1;
         		final int gameCount = m_adapter.getChildrenCount(newGamesGroup);
         		if (gameCount > 0){
@@ -1264,6 +1278,7 @@ public class GamesList extends XWExpandableListActivity
                             CurGameInfo cgi = new CurGameInfo( this );
                             XwJNI.gi_from_stream( cgi, stream );
                             cgi.setRobotSmartness(robotIQ);
+                            cgi.setZoomOnDrop(zoomOnDrop);
                             cgi.setPhoniesChoice(phoniesAction);
                             GameUtils.applyChanges( this, cgi, new CommsAddrRec(), gameLock, false );     
                             restartGame = true;
@@ -1273,6 +1288,7 @@ public class GamesList extends XWExpandableListActivity
                         if (restartGame){
                         	// Yes, open the existing game.
                         	launchGame( rowid, DBUtils.GAME_TYPE_ANDROID );
+                    		GameUtils.saveAndroidGame(this, rowid);
                         	oldGameRestarted = true;  	                        	
                         }
         			}
@@ -1283,6 +1299,7 @@ public class GamesList extends XWExpandableListActivity
         		CurGameInfo gi = new CurGameInfo( this );
         		gi.setRobotSmartness(robotIQ);
         		gi.setHintsOn(true); // Always on in a Me vs. Android game.
+                gi.setZoomOnDrop(zoomOnDrop);
         		for(int i = 0; i < gi.nPlayers; i++){
         			if (gi.players[i].isRobot()){
         				gi.players[i].name = getString(R.string.android_name);
@@ -1293,12 +1310,17 @@ public class GamesList extends XWExpandableListActivity
         		gi.setPhoniesChoice(phoniesAction);
         		final long rowid = GameUtils.saveNew( this, gi );               
         		GameUtils.launchGame( this, rowid, false, DBUtils.GAME_TYPE_ANDROID );
+        		GameUtils.saveAndroidGame(this, rowid);
         	}
         }
 	}
 
+	//
+	// Start Pass & Play game.
+	//
 	private void startPassAndPlay(){
         if ( !m_gameLaunched ) {
+        	mStartTime = System.currentTimeMillis();
             DBUtils.clearDBChangeListener( this );
             deleteExtraGames();
 
@@ -1313,8 +1335,14 @@ public class GamesList extends XWExpandableListActivity
         	if (wornUnknown){
         		phoniesAction = CurGameInfo.XWPhoniesChoice.PHONIES_WARN;
         	}
+        	final boolean zoomOnDrop = sp.getBoolean("zoomondrop", false);
 
-        	if (null != m_adapter){
+        	//
+        	// Try to restart quickly.
+        	//
+        	oldGameRestarted = restartPassAndPlay(hintsOn, zoomOnDrop, phoniesAction);
+        	
+        	if (null != m_adapter && !oldGameRestarted){
         		final int newGamesGroup = 1;
         		final int gameCount = m_adapter.getChildrenCount(newGamesGroup);
         		if (gameCount > 0){
@@ -1333,6 +1361,7 @@ public class GamesList extends XWExpandableListActivity
                         	CurGameInfo cgi = new CurGameInfo( this );
                         	XwJNI.gi_from_stream( cgi, stream );
                         	cgi.setHintsOn(hintsOn);
+                        	cgi.setZoomOnDrop(zoomOnDrop);
                             for(int j = 0; j < cgi.nPlayers; j++){
                                 // Set names.
                                 cgi.players[j].name = CommonPrefs.getDefaultPlayerName( this, j );
@@ -1342,6 +1371,7 @@ public class GamesList extends XWExpandableListActivity
                         }
                         gameLock.unlock();
                         if ( deleteGame ){
+                        	GameUtils.savePassAndPlay(this, -1);
                         	GameUtils.deleteGame( this, rowid, false ); 
                         	oldGameDeleted = true;
                         }
@@ -1349,6 +1379,7 @@ public class GamesList extends XWExpandableListActivity
                         if (restartGame){
                         	// Yes, open the existing game.
                         	launchGame( rowid, DBUtils.GAME_TYPE_PASS_AND_PLAY );
+                            GameUtils.savePassAndPlay(this, rowid);
                         	oldGameRestarted = true;  	                        	
                         }
         			}
@@ -1358,6 +1389,7 @@ public class GamesList extends XWExpandableListActivity
         		// Start new game.
         		CurGameInfo gi = new CurGameInfo( this );
         		gi.setHintsOn(hintsOn);
+        		gi.setZoomOnDrop(zoomOnDrop);
         		// Add players up to numberOfPlayers.
         		final boolean addPlayers = (gi.nPlayers < numberOfPlayers);
         		final int nAdd = numberOfPlayers - gi.nPlayers;
@@ -1371,22 +1403,28 @@ public class GamesList extends XWExpandableListActivity
                     gi.players[i].setIsRobot(false);
                     // Set names.
                     gi.players[i].name = CommonPrefs.getDefaultPlayerName( this, i );
+                    // Human dictionary.
+                    gi.players[i].dictName = CommonPrefs.getDefaultHumanDict(this);
                 } 
                 gi.setPhoniesChoice(phoniesAction);
                 final long rowid = GameUtils.saveNew( this, gi );               
                 GameUtils.launchGame( this, rowid, false, DBUtils.GAME_TYPE_PASS_AND_PLAY );
+                GameUtils.savePassAndPlay(this, rowid);
         	}
         }
 	}
 
 	//
-	// Shouldn't happen.
+	// Delete extra games if there are any.
 	//
 	private static final int MAX_GAMES = 2; // 1 vs. Android + 1 Pass & Play.
     private void deleteExtraGames(){
        	long[] rowIDs = DBUtils.getRowIDs(this);
        	if (rowIDs.length <= MAX_GAMES) return;
        	
+    	//
+    	// Shouldn't happen.
+    	//
        	int countMeVsAndroid = 0;
        	int countPassAndPlay = 0;
        	for(int i = 0; i < rowIDs.length; i++){
@@ -1404,13 +1442,108 @@ public class GamesList extends XWExpandableListActivity
        		}
        		if (meVsAndroid && 1 < countMeVsAndroid){
               	GameUtils.deleteGame( this, rowid, false );
-                Assert.fail();
+                // Assert.fail();
        		}
        		if (passAndPlay && 1 < countPassAndPlay){
               	GameUtils.deleteGame( this, rowid, false );
-                Assert.fail();
+                // Assert.fail();
        		}
-       	}   	
+       	}
+       	// Might be bad too, so don't use.
+       	GameUtils.saveAndroidGame(this, -1);
+       	GameUtils.savePassAndPlay(this, -1);
+    }
+
+    //
+    // Restart Android game shortcut.
+    //
+    private boolean restartAndroidGame(int robotIQ, boolean zoomOnDrop, CurGameInfo.XWPhoniesChoice phoniesAction){
+    	boolean ok = false;
+
+    	final long rowidAndroidGame = GameUtils.getAndroidGame(this);
+    	GameUtils.saveAndroidGame(this, -1);
+
+    	if (-1 != rowidAndroidGame){
+    		try {
+    			GameLock gameLock = new GameLock( rowidAndroidGame, true ).lock();
+    			byte[] stream = GameUtils.savedGame( this, gameLock );
+    			if (null != stream){
+    				CurGameInfo cgi = new CurGameInfo( this );
+    				XwJNI.gi_from_stream( cgi, stream );
+    				cgi.setRobotSmartness(robotIQ);
+    				cgi.setZoomOnDrop(zoomOnDrop);
+    				cgi.setPhoniesChoice(phoniesAction);
+    				GameUtils.applyChanges( this, cgi, new CommsAddrRec(), gameLock, false );     
+    				gameLock.unlock();       		
+    				// Open the existing game.
+    				launchGame( rowidAndroidGame, DBUtils.GAME_TYPE_ANDROID );
+    				ok = true;        			
+    			} else {
+    				gameLock.unlock();         			
+    			}
+    		} catch (Exception e) {
+    			// ok is false.
+    		}
+    	}
+
+    	if ( ok ){
+    		// Save again if everything went ok.
+    		GameUtils.saveAndroidGame(this, rowidAndroidGame);
+    	}
+    	
+    	return ok;
+    }
+ 
+    //
+    // Restart Pass & Play game shortcut.
+    //
+    private boolean restartPassAndPlay(boolean hintsOn, boolean zoomOnDrop, CurGameInfo.XWPhoniesChoice phoniesAction){
+    	boolean ok = false;
+  
+    	final long rowidPassAndPlay = GameUtils.getPassAndPlay(this);
+    	GameUtils.savePassAndPlay(this, -1);
+
+    	if (-1 != rowidPassAndPlay){
+            try {
+            	GameLock gameLock = new GameLock( rowidPassAndPlay, true ).lock();
+            	byte[] stream = GameUtils.savedGame( this, gameLock );
+            	if (null != stream){
+            		GameSummary gs = GameUtils.summarize(this, gameLock);
+            		// Delete it if no moves? (Delete so number of players change can take effect.)
+            		boolean deleteGame = (0 == gs.nMoves);
+            		if ( !deleteGame ){                        	
+            			CurGameInfo cgi = new CurGameInfo( this );
+            			XwJNI.gi_from_stream( cgi, stream );
+            			cgi.setHintsOn(hintsOn);
+            			cgi.setZoomOnDrop(zoomOnDrop);
+            			for(int j = 0; j < cgi.nPlayers; j++){
+            				// Set names.
+            				cgi.players[j].name = CommonPrefs.getDefaultPlayerName( this, j );
+            			} 
+            			cgi.setPhoniesChoice(phoniesAction);
+            			GameUtils.applyChanges( this, cgi, new CommsAddrRec(), gameLock, false );
+                        gameLock.unlock();
+            			launchGame( rowidPassAndPlay, DBUtils.GAME_TYPE_PASS_AND_PLAY );
+            			ok = true;  	                        	
+            		} else {
+                		gameLock.unlock();
+            			GameUtils.deleteGame( this, rowidPassAndPlay, false ); 
+            			
+            		}
+            	} else {
+            		gameLock.unlock();            		
+            	}
+            } catch (Exception e) {
+            	// ok is false.
+            }
+    	}
+    	
+    	if ( ok ){
+    		// Save again if everything went ok.
+    		GameUtils.savePassAndPlay(this, rowidPassAndPlay);
+    	}
+
+    	return ok;
     }
     
 }

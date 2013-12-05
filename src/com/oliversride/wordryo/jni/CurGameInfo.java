@@ -50,11 +50,12 @@ public class CurGameInfo {
     public DeviceRole serverRole;
 
     public boolean hintsNotAllowed;
+    public boolean zoomOnDrop;
     public boolean timerEnabled;
     public boolean allowPickTiles;
     public boolean allowHintRect;
     public XWPhoniesChoice phoniesAction;
-
+    
     // private int[] m_visiblePlayers;
     // private int m_nVisiblePlayers;
     private int m_smartness;
@@ -77,6 +78,7 @@ public class CurGameInfo {
             : DeviceRole.SERVER_STANDALONE;
         hintsNotAllowed = !CommonPrefs.getDefaultHintsAllowed( context, 
                                                                isNetworked );
+        zoomOnDrop = false;
         phoniesAction = CommonPrefs.getDefaultPhonies( context );
         timerEnabled = CommonPrefs.getDefaultTimerEnabled( context );
         allowPickTiles = false;
@@ -122,6 +124,7 @@ public class CurGameInfo {
         dictName = src.dictName;
         dictLang = src.dictLang;
         hintsNotAllowed = src.hintsNotAllowed;
+        zoomOnDrop = src.zoomOnDrop;
         phoniesAction = src.phoniesAction;
         timerEnabled = src.timerEnabled;
         allowPickTiles = src.allowPickTiles;
@@ -454,6 +457,14 @@ public class CurGameInfo {
     	hintsNotAllowed = !hintsOn;
     }
 
+    //
+    // Zoom on drop on/off.
+    //
+    public void setZoomOnDrop(boolean zoom)
+    {
+    	zoomOnDrop = zoom;
+    }
+    
     //
     // What to do if a word isn't in the word list.
     //

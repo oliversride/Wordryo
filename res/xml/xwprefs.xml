@@ -75,6 +75,12 @@
             android:summary="@string/not_in_dictionary"
             android:defaultValue="false"
             />
+		<CheckBoxPreference
+			android:key="zoomondrop"
+            android:title="@string/zoom_on_drop"
+            android:summary="@string/zoom_summary"
+            android:defaultValue="false"
+            />
 	</PreferenceCategory>
 
 	<!-- Hidden by PrefsActivity (defaultValues allow for hooking into dictionary choosing code). -->

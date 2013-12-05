@@ -37,6 +37,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
@@ -273,11 +274,13 @@ public class BoardActivity extends XWActivity
 					public void onClick(DialogInterface dialog, int which) {
 						// Close game and start a new one.
 						if (DBUtils.GAME_TYPE_ANDROID == DBUtils.getGameType(BoardActivity.this, m_rowid)){
+							GameUtils.saveAndroidGame(BoardActivity.this, -1);
 	                        waitCloseGame( false );
 	                        GameUtils.deleteGame( BoardActivity.this, m_rowid, false );
 	                        startNewMeVsAndroid();
 	                        finish();
 						} else if (DBUtils.GAME_TYPE_PASS_AND_PLAY == DBUtils.getGameType(BoardActivity.this, m_rowid)){
+							GameUtils.savePassAndPlay(BoardActivity.this, -1);
 	                        waitCloseGame( false );
 	                        startNewPassAndPlay();
 	                        GameUtils.deleteGame( BoardActivity.this, m_rowid, false );
@@ -349,7 +352,8 @@ public class BoardActivity extends XWActivity
                 lstnr = new DialogInterface.OnClickListener() {
                         public void onClick( DialogInterface dlg, 
                                              int whichButton ) {
-
+                        	GameUtils.saveAndroidGame(BoardActivity.this, -1);
+                        	GameUtils.savePassAndPlay(BoardActivity.this, -1);
                             waitCloseGame( false );
                             GameUtils.deleteGame( BoardActivity.this,
                                                   m_rowid, false );
@@ -1009,6 +1013,8 @@ public class BoardActivity extends XWActivity
                 launchLookup( m_words, m_gi.dictLang );
                 break;
             case GAME_DELETE:
+            	GameUtils.saveAndroidGame(BoardActivity.this, -1);
+            	GameUtils.savePassAndPlay(BoardActivity.this, -1);
             	waitCloseGame( false );
             	GameUtils.deleteGame( BoardActivity.this, m_rowid, false );
             	finish();
@@ -2402,9 +2408,11 @@ public class BoardActivity extends XWActivity
     	if (wornUnknown){
     		phoniesAction = CurGameInfo.XWPhoniesChoice.PHONIES_WARN;
     	}
-
+    	final boolean zoomOnDrop = sp.getBoolean("zoomondrop", false);
+    	
 		CurGameInfo gi = new CurGameInfo( this );
 		gi.setHintsOn(hintsOn);
+		gi.setZoomOnDrop(zoomOnDrop);
 		// Add players up to numberOfPlayers.
 		final boolean addPlayers = (gi.nPlayers < numberOfPlayers);
 		final int nAdd = numberOfPlayers - gi.nPlayers;
@@ -2418,6 +2426,8 @@ public class BoardActivity extends XWActivity
             gi.players[i].setIsRobot(false);
             // Set names.
             gi.players[i].name = CommonPrefs.getDefaultPlayerName( this, i );
+            // Human dictionary.
+            gi.players[i].dictName = CommonPrefs.getDefaultHumanDict(this);
         } 
         gi.setPhoniesChoice(phoniesAction);
         final long rowid = GameUtils.saveNew( this, gi );               

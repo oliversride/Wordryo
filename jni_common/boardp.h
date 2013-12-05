@@ -318,6 +318,8 @@ const XP_UCHAR* getTileDrawInfo( const BoardCtxt* board, Tile tile,
 XP_Bool dividerMoved( BoardCtxt* board, XP_U8 newLoc );
 
 XP_Bool scrollIntoView( BoardCtxt* board, XP_U16 col, XP_U16 row );
+XP_Bool willScrollIntoViewX( BoardCtxt* board, XP_U16 col);
+XP_Bool willScrollIntoViewY( BoardCtxt* board, XP_U16 row );
 XP_Bool onBorderCanScroll( const BoardCtxt* board, SDIndex indx, XP_U16 row, 
                            XP_S16* change );
 XP_Bool adjustXOffset( BoardCtxt* board, XP_S16 moveBy );

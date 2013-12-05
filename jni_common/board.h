@@ -87,6 +87,7 @@ XP_Bool board_canHint( const BoardCtxt* board );
 
 /* zoomBy: >0: zoom in; < 0: zoom out; 0: query only */
 XP_Bool board_zoom( BoardCtxt* board, XP_S16 zoomBy, XP_Bool* canInOut );
+void board_zoom_word( BoardCtxt* board, XP_U16 xx, XP_U16 yy );
 
 void board_setScoreboardLoc( BoardCtxt* board, 
                              XP_U16 scoreLeft, XP_U16 scoreTop,
@@ -132,8 +133,8 @@ void board_formatRemainingTiles( BoardCtxt* board, XWStreamCtxt* stream );
 #ifdef POINTER_SUPPORT
 XP_Bool board_handlePenDown( BoardCtxt* board, XP_U16 x, XP_U16 y, 
                              XP_Bool* handled );
-XP_Bool board_handlePenMove( BoardCtxt* board, XP_U16 x, XP_U16 y );
-XP_Bool board_handlePenUp( BoardCtxt* board, XP_U16 x, XP_U16 y );
+XP_Bool board_handlePenMove( BoardCtxt* board, XP_U16 x, XP_U16 y, XP_U16 offset, XP_Bool scrollBoard );
+XP_Bool board_handlePenUp( BoardCtxt* board, XP_U16 x, XP_U16 y, XP_U16 offset );
 #endif
 
 #ifdef KEY_SUPPORT
