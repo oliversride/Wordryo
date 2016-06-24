@@ -21,12 +21,11 @@
 package com.oliversride.wordryo;
 
 import junit.framework.Assert;
+import android.app.Activity;
 import android.app.Dialog;
 import android.os.Bundle;
 
-import com.actionbarsherlock.app.SherlockActivity;
-
-public class XWActivity extends SherlockActivity
+public class XWActivity extends Activity
     implements DlgDelegate.DlgClickNotify, MultiService.MultiEventListener {
 	private final static String TAG = "XWActivity";
     private DlgDelegate m_delegate;

@@ -3,7 +3,7 @@
     android:tint="@color/white"
     android:src="@drawable/ic_menu_revert"
     android:scaleType="centerInside"
-    android:background="@drawable/bkgnd_undo_view"
+    android:background="@drawable/bkgnd_btn_rack"
 	android:layout_width="wrap_content"
 	android:layout_height="wrap_content" >
 </ImageButton>

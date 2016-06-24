@@ -37,17 +37,16 @@ import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
-import com.actionbarsherlock.view.MenuItem;
 import com.oliversride.wordryo.jni.CommonPrefs;
 import com.oliversride.wordryo.jni.CommsAddrRec;
 import com.oliversride.wordryo.jni.CurGameInfo;
@@ -711,7 +710,7 @@ public class BoardActivity extends XWActivity
     @Override
     public boolean onCreateOptionsMenu( Menu menu ) 
     {
-        MenuInflater inflater = getSupportMenuInflater();
+        MenuInflater inflater = getMenuInflater();
         inflater.inflate( R.menu.board_menu, menu );
 
         return true;

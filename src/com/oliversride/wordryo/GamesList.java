@@ -34,8 +34,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.ContextMenu.ContextMenuInfo;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,8 +47,6 @@ import android.widget.ExpandableListView.ExpandableListContextMenuInfo;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuItem;
 import com.oliversride.wordryo.jni.CommonPrefs;
 import com.oliversride.wordryo.jni.CommsAddrRec;
 import com.oliversride.wordryo.jni.CurGameInfo;
@@ -663,7 +662,7 @@ public class GamesList extends XWExpandableListActivity
     @Override
     public boolean onCreateOptionsMenu( Menu menu )
     {
-    	getSupportMenuInflater().inflate(R.menu.games_list_menu, menu);
+    	getMenuInflater().inflate(R.menu.games_list_menu, menu);
     	return super.onCreateOptionsMenu(menu);       
     }
 

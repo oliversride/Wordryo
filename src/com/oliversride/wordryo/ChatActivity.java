@@ -24,15 +24,14 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
-import com.actionbarsherlock.view.MenuItem;
 
 public class ChatActivity extends XWActivity implements View.OnClickListener {
 
@@ -72,7 +71,7 @@ public class ChatActivity extends XWActivity implements View.OnClickListener {
     @Override
     public boolean onCreateOptionsMenu( Menu menu )
     {
-        MenuInflater inflater = getSupportMenuInflater();
+        MenuInflater inflater = getMenuInflater();
         inflater.inflate( R.menu.chat_menu, menu );
         return true;
     }

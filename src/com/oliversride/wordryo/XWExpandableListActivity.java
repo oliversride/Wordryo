@@ -22,12 +22,11 @@ package com.oliversride.wordryo;
 
 import junit.framework.Assert;
 import android.app.Dialog;
+import android.app.ExpandableListActivity;
 import android.os.Bundle;
 
-import com.actionbarsherlock.app.SherlockExpandableListActivity;
 
-
-public class XWExpandableListActivity extends SherlockExpandableListActivity 
+public class XWExpandableListActivity extends ExpandableListActivity 
     implements DlgDelegate.DlgClickNotify, MultiService.MultiEventListener {
 
     private DlgDelegate m_delegate;
