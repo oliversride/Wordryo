@@ -40,6 +40,7 @@ import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.FloatMath;
 import android.util.Log;
+import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
@@ -268,6 +269,8 @@ public class BoardView extends RelativeLayout implements DrawCtx, BoardHandler,
         m_typeRegular = Typeface.createFromAsset(getContext().getAssets(), "Roboto-Regular.ttf");
       	m_typeNarrow = Typeface.createFromAsset(getContext().getAssets(), "Roboto-Condensed.ttf");
         m_fillPaint.setTypeface(m_typeRegular);
+        
+        mDetector = new GestureDetector(context, new MyGestureListener());
     }
 
     @Override
@@ -347,6 +350,9 @@ public class BoardView extends RelativeLayout implements DrawCtx, BoardHandler,
             break;
         }
 
+        // Listen for double-tap.
+        mDetector.onTouchEvent(event);
+        
         return true;             // required to get subsequent events
     }
 // Old way...
@@ -1972,5 +1978,33 @@ public class BoardView extends RelativeLayout implements DrawCtx, BoardHandler,
   		}
   		
   	}
-  	  	
+ 
+  	//
+  	// Quick zoom on double-tap.
+  	//
+    private GestureDetector mDetector;
+  	private class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
+
+        @Override
+        public boolean onDown(MotionEvent e) {
+            return true;
+        }
+        
+        @Override
+        public boolean onDoubleTap(MotionEvent e) {
+            float x = e.getX();
+            float y = e.getY();
+            if (JNIThread.ZOOM_BIGGER == JNIThread.smZoomDirection){
+                m_jniThread.handle( JNIThread.JNICmd.CMD_ZOOM, 8); 
+                m_jniThread.handle( JNIThread.JNICmd.CMD_ZOOM, 2);
+                // Needs the second one to get zoom icon to change from + to -.
+            }
+            if (JNIThread.ZOOM_SMALLER == JNIThread.smZoomDirection){
+                m_jniThread.handle( JNIThread.JNICmd.CMD_ZOOM, -8); 
+                m_jniThread.handle( JNIThread.JNICmd.CMD_ZOOM, -2); 
+            }           
+            return true;
+        }
+    }
+  	
 }

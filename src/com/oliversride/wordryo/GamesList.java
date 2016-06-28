@@ -46,6 +46,7 @@ import android.widget.ExpandableListView;
 import android.widget.ExpandableListView.ExpandableListContextMenuInfo;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.oliversride.wordryo.jni.CommonPrefs;
 import com.oliversride.wordryo.jni.CommsAddrRec;
@@ -395,7 +396,7 @@ public class GamesList extends XWExpandableListActivity
 				showFocus((ViewGroup) v, hasFocus);
 			}
 		});
-
+    	
     } // onCreate
 
     @Override
@@ -434,6 +435,12 @@ public class GamesList extends XWExpandableListActivity
         // m_phoneStateListener = new XWPhoneStateListener();
         // mgr.listen( m_phoneStateListener,
         //             PhoneStateListener.LISTEN_DATA_CONNECTION_STATE );
+    }
+    
+    @Override
+    protected void onResume (){
+    	super.onResume();
+    	updatePassAndPlayPlayers();
     }
     
     @Override
@@ -1543,6 +1550,17 @@ public class GamesList extends XWExpandableListActivity
     	}
 
     	return ok;
+    }
+
+    //
+    // Show number of players in (next) Pass & Play game.
+    //
+    private void updatePassAndPlayPlayers(){
+		final TextView tvNumberOfPlayers = (TextView) findViewById(R.id.passandplayinfo);
+    	final SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences( this );
+    	final int numberOfPlayers = Integer.valueOf(sp.getString("numberofplayers", "2"));
+    	final String s = String.valueOf(numberOfPlayers) + " players";
+    	tvNumberOfPlayers.setText(s);	
     }
     
 }

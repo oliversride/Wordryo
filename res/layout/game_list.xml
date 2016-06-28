@@ -44,6 +44,7 @@
 	    android:textSize="22sp"
 	    android:layout_width="match_parent"
 	    android:layout_height="50dip"
+	    android:layout_marginStart="18dp"
 	    android:gravity="center">
 	</TextView>
 	
@@ -77,6 +78,18 @@
 	    android:textSize="22sp"
 	    android:layout_width="match_parent"
 	    android:layout_height="50dip"
+		android:layout_marginStart="18dp"
+	    android:gravity="center">
+	</TextView>
+
+	<TextView
+	    android:visibility="gone"
+	    android:id="@+id/passandplayinfo"
+	    android:textColor="#FFFFFFFF"
+	    android:textSize="14sp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		android:layout_marginStart="18dp"
 	    android:gravity="center">
 	</TextView>
 
