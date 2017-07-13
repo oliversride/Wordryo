@@ -1,0 +1,3 @@
+/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/x86_64Release/mips/CMakeFiles/edit_cache.dir
+/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/x86_64Release/mips/CMakeFiles/rebuild_cache.dir
+/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/x86_64Release/mips/CMakeFiles/libxwjni.dir

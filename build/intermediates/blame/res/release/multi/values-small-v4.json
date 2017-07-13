@@ -1,0 +1,102 @@
+[
+    {
+        "outputFile": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-small-v4/values-small-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 51,
+                    "endOffset": 102
+                },
+                "from": {
+                    "file": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/values-small/dimens.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 1,
+                        "startOffset": 734,
+                        "endColumn": 48,
+                        "endOffset": 781
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 107,
+                    "endColumn": 51,
+                    "endOffset": 154
+                },
+                "from": {
+                    "file": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/values-small/dimens.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 1,
+                        "startOffset": 685,
+                        "endColumn": 48,
+                        "endOffset": 732
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 159,
+                    "endColumn": 52,
+                    "endOffset": 207
+                },
+                "from": {
+                    "file": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/values-small/dimens.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 1,
+                        "startOffset": 832,
+                        "endColumn": 49,
+                        "endOffset": 880
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 212,
+                    "endColumn": 50,
+                    "endOffset": 258
+                },
+                "from": {
+                    "file": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/values-small/dimens.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 1,
+                        "startOffset": 784,
+                        "endColumn": 47,
+                        "endOffset": 830
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 263,
+                    "endColumn": 50,
+                    "endOffset": 309
+                },
+                "from": {
+                    "file": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/values-small/dimens.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 1,
+                        "startOffset": 882,
+                        "endColumn": 47,
+                        "endOffset": 928
+                    }
+                }
+            }
+        ]
+    }
+]

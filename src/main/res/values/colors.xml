@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="kik_topdarkgrey">#FF31323E</color>
+  
+	<!-- Milan Sky -->	
+    <color name="empty_cell">#FF2C2A3C</color>
+    <color name="bonus_bkgnd">#FF2C2A3C</color>
+    <color name="grid">#FF385075</color>
+    <color name="sherlock">#FF2C3F5B</color>
+    <color name="gamelistbkgnd">#FF737D8C</color>
+    <color name="scoreboard">#FF737D8C</color>
+    <color name="scoreboardspacers">#FF9BB1B2</color>
+    <color name="tile_bkgnd">#FFDEFDFF</color>
+    <color name="tile_highlight">#FFffffff</color>
+    <color name="tile_last">#FFffffff</color>
+    <color name="colour_turn_indicator">#FFFFFFFF</color>
+    <color name="bonus3w">#FFFF2D1C</color>
+    <color name="bonus2l">#FF91A5A6</color>
+    <color name="bonus3l">#FF78AB46</color>
+    <color name="bonus2w">#FFAB9917</color>
+    <color name="tile_drag">#FFAEF765</color>
+
+    <color name="selector_orange">#FFFF8000</color>
+    <color name="md_orange_A200">#FFAB40</color>
+
+    <!-- colorControlNormal in Material Dark theme -->
+    <color name="secondary_text_default_material_dark">#b3ffffff</color>
+
+    <!--    
+    <color name="bonus3w">#FFFF2D1C</color>
+    <color name="bonus2l">#FF869899</color>
+    <color name="bonus3l">#FF78AB46</color>
+    <color name="bonus2w">#FFAB9917</color>
+    
+    <color name="bonus3w">#FFFF2D1C</color>
+    <color name="bonus2l">#FF9C717B</color>
+    <color name="bonus3l">#FF5D93AE</color>
+    <color name="bonus2w">#FF798E36</color>
+        
+    <color name="bonus3w">#FFFF2D1C</color>
+    <color name="bonus2l">#FF4F7D94</color>
+    <color name="bonus3l">#FF78AB46</color>
+    <color name="bonus2w">#FFAB9917</color>
+    <color name="bonus_bkgnd">#FF363A53</color>
+ 	 -->    
+    
+</resources>

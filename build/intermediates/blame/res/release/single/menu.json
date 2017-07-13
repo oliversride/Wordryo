@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/release/menu/dicts_item_menu.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/menu/dicts_item_menu.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/release/menu/games_list_item_menu.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/menu/games_list_item_menu.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/release/menu/games_list_menu.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/menu/games_list_menu.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/release/menu/games_list_group_menu.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/menu/games_list_group_menu.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/release/menu/board_menu.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/menu/board_menu.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/release/menu/chat_menu.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/menu/chat_menu.xml"
+    }
+]

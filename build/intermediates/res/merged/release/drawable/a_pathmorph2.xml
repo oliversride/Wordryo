@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="300dp"
+    android:tint="?android:attr/colorControlNormal"
+    android:viewportHeight="537"
+    android:viewportWidth="537">
+    <group
+        android:name="pathGroup"
+        android:pivotX="268"
+        android:pivotY="268">
+        <path
+            android:name="minusPath"
+            android:fillColor="@android:color/white"
+            android:pathData="@string/pathmorph2_plusminus_minus_path" />
+    </group>
+</vector>

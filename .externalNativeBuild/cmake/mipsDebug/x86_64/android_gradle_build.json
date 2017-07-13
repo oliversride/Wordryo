@@ -1,0 +1,197 @@
+
+{
+	"buildFiles" : 
+	[
+		"/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni/CMakeLists.txt"
+	],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"/Users/richard/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64 --target clean"
+	],
+	"libraries" : 
+	{
+		"libxwjni-Debug-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "libxwjni",
+			"buildCommand" : "/Users/richard/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64 --target libxwjni",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni/xwjni.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni/utilwrapper.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni/drawwrapper.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni/xportwrapper.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni/anddict.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni/andutils.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni/jniutlswrapper.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/boarddrw.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/scorebdp.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/dragdrpp.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/pool.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/tray.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/dictnry.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/dictiter.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/mscore.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/vtabmgr.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/strutils.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/engine.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/board.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/mempool.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/game.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/server.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/model.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/comms.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/memstream.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/movestak.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/dbgutil.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsDebug/x86_64"
+				}
+			],
+			"output" : "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/cmake/mips/debug/obj/x86_64/liblibxwjni.so",
+			"toolchain" : "13353342513621054563"
+		}
+	},
+	"toolchains" : 
+	{
+		"13353342513621054563" : 
+		{
+			"cCompilerExecutable" : "/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}

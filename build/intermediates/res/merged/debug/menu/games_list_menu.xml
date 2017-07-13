@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    <item android:id="@+id/gamel_menu_newgame"
+          android:title="@string/button_new_game"
+          android:icon="@android:drawable/ic_menu_add"
+          />
+    <item android:id="@+id/gamel_menu_newgroup"
+          android:visibility="invisible"
+          android:title="@string/button_new_group"
+          android:icon="@android:drawable/ic_menu_add"
+          />
+      -->
+    <item android:id="@+id/gamel_menu_prefs"
+          android:title="@string/menu_prefs"
+          android:showAsAction="ifRoom"
+          android:icon="@drawable/ic_menu_preferences"
+          />
+
+    <!--
+    <item android:id="@+id/gamel_menu_dicts"
+          android:title="@string/gamel_menu_dicts"
+          android:icon="@drawable/dicticon"
+          />
+    -->
+
+    <!--    
+    <item android:id="@+id/gamel_menu_about"
+          android:title="@string/board_menu_file_about"
+          android:icon="@android:drawable/ic_menu_info_details"
+          />
+	-->
+	
+    <!--
+    <item android:id="@+id/gamel_menu_email"
+          android:title="@string/board_menu_file_email"
+          android:icon="@android:drawable/ic_menu_send"
+          />
+
+    <item android:id="@+id/gamel_menu_checkmoves"
+          android:title="@string/gamel_menu_checkmoves"
+          android:icon="@drawable/stat_notify_sync"
+          />
+    -->
+    <!-- Debug only menuitems -->
+    <item android:id="@+id/gamel_menu_checkupdates"
+          android:title="@string/gamel_menu_checkupdates"
+          />
+    <item android:id="@+id/gamel_menu_storedb"
+          android:title="@string/gamel_menu_storedb"
+          />
+    <item android:id="@+id/gamel_menu_loaddb"
+          android:title="@string/gamel_menu_loaddb"
+          />
+    
+    <!-- ic_menu_archive.png -->
+</menu>

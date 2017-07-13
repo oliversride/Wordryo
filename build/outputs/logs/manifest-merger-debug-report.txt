@@ -1,0 +1,127 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:23:1-226:12
+	package
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:24:11-44
+		INJECTED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml
+		INJECTED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:26:11-36
+		INJECTED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml
+		INJECTED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml
+	android:versionCode
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:25:11-34
+		INJECTED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml
+		INJECTED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:23:11-69
+application
+ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:57:3-225:17
+MERGED from [com.google.android.gms:play-services-games:10.2.6] /Users/richard/.android/build-cache/dc8b8221f937b0f08c878f5eeeb3ff3710129553/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-drive:10.2.6] /Users/richard/.android/build-cache/e432559fb6b27bb0efd47c1c88d3ed90d8f6833b/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-plus:10.2.6] /Users/richard/.android/build-cache/a3dd2a412c9ec7c5bc3e075140f0210eeb105e7b/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-base:10.2.6] /Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.6] /Users/richard/.android/build-cache/4ca88b5fbaa5c4116aebf6da4fb3e3627df47147/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.6] /Users/richard/.android/build-cache/154c3878ad7002bcc38862330840312a30137662/output/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.2.0] /Users/richard/.android/build-cache/876a7abf3bfe847626f6bffa9c42fbe50cd6694d/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] /Users/richard/.android/build-cache/f6528824ee5b40e371c6adbac3332cb399d43448/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/richard/.android/build-cache/2137b1c3c8b024e0df5c74901a680955d3bee20d/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] /Users/richard/.android/build-cache/0621a3292f54642b84a678d0ce5b778d2b719956/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] /Users/richard/.android/build-cache/626ab0512e2a690c9bf5e52314aa9d8e6b21848f/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] /Users/richard/.android/build-cache/243cf92d4434550412d266ba10fd210d83d2b334/output/AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:59:16-48
+	android:allowBackup
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:60:16-42
+	android:icon
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:57:16-52
+	android:theme
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:58:16-47
+activity#com.oliversride.wordryo.GamesList
+ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:63:5-73:16
+	android:screenOrientation
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:66:15-51
+	android:label
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:64:15-47
+	android:launchMode
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:65:15-44
+	android:configChanges
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:67:15-65
+	android:name
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:63:15-39
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:69:3-72:24
+action#android.intent.action.MAIN
+ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:70:10-62
+	android:name
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:70:18-59
+category#android.intent.category.LAUNCHER
+ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:71:10-70
+	android:name
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:71:20-67
+activity#com.oliversride.wordryo.PrefsActivity
+ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:100:5-105:17
+	android:screenOrientation
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:103:15-49
+	android:label
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:102:15-50
+	android:configChanges
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:104:15-65
+	android:theme
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:101:15-54
+	android:name
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:100:15-43
+activity#com.oliversride.wordryo.BoardActivity
+ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:107:5-111:16
+	android:screenOrientation
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:109:13-49
+	android:label
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:108:10-42
+	android:configChanges
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:110:13-51
+	android:name
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:107:15-67
+activity#com.oliversride.wordryo.LookupActivity
+ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:113:5-116:17
+	android:configChanges
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:114:15-65
+	android:theme
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:115:15-58
+	android:name
+		ADDED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml:113:15-44
+uses-sdk
+INJECTED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.google.android.gms:play-services-games:10.2.6] /Users/richard/.android/build-cache/dc8b8221f937b0f08c878f5eeeb3ff3710129553/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-drive:10.2.6] /Users/richard/.android/build-cache/e432559fb6b27bb0efd47c1c88d3ed90d8f6833b/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-plus:10.2.6] /Users/richard/.android/build-cache/a3dd2a412c9ec7c5bc3e075140f0210eeb105e7b/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.6] /Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.6] /Users/richard/.android/build-cache/4ca88b5fbaa5c4116aebf6da4fb3e3627df47147/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.6] /Users/richard/.android/build-cache/154c3878ad7002bcc38862330840312a30137662/output/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.2.0] /Users/richard/.android/build-cache/876a7abf3bfe847626f6bffa9c42fbe50cd6694d/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.2.0] /Users/richard/.android/build-cache/f6528824ee5b40e371c6adbac3332cb399d43448/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/richard/.android/build-cache/2137b1c3c8b024e0df5c74901a680955d3bee20d/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.2.0] /Users/richard/.android/build-cache/0621a3292f54642b84a678d0ce5b778d2b719956/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.2.0] /Users/richard/.android/build-cache/626ab0512e2a690c9bf5e52314aa9d8e6b21848f/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.2.0] /Users/richard/.android/build-cache/243cf92d4434550412d266ba10fd210d83d2b334/output/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:25.2.0] /Users/richard/.android/build-cache/876a7abf3bfe847626f6bffa9c42fbe50cd6694d/output/AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml
+		INJECTED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml
+		INJECTED from /Users/richard/StudioProjects/MyProjects/wordryo/src/main/AndroidManifest.xml
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.2.6] /Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.2.6] /Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.2.6] /Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.2.6] /Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:10.2.6] /Users/richard/.android/build-cache/154c3878ad7002bcc38862330840312a30137662/output/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:10.2.6] /Users/richard/.android/build-cache/154c3878ad7002bcc38862330840312a30137662/output/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:10.2.6] /Users/richard/.android/build-cache/154c3878ad7002bcc38862330840312a30137662/output/AndroidManifest.xml:20:20-65

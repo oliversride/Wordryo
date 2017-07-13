@@ -1,0 +1,75 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:drawable="@drawable/vd_immersive_off">
+
+    <target android:name="chevronUpper">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="@dimen/avd_chevron_duration"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="translateY"
+                android:valueFrom="5"
+                android:valueTo="10" />
+        </aapt:attr>
+    </target>
+
+    <target android:name="leftBarUpper">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="@dimen/avd_bars_immersive_duration"
+                android:interpolator="@anim/pathmorph_expandcollapse"
+                android:propertyName="rotation"
+                android:valueFrom="135"
+                android:valueTo="45"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+
+    <target android:name="rightBarUpper">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="@dimen/avd_bars_immersive_duration"
+                android:interpolator="@anim/pathmorph_expandcollapse"
+                android:propertyName="rotation"
+                android:valueFrom="45"
+                android:valueTo="135"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+
+    <target android:name="chevron">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="@dimen/avd_chevron_duration"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="translateY"
+                android:valueFrom="18"
+                android:valueTo="14" />
+        </aapt:attr>
+    </target>
+
+    <target android:name="leftBar">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="@dimen/avd_bars_immersive_duration"
+                android:interpolator="@anim/pathmorph_expandcollapse"
+                android:propertyName="rotation"
+                android:valueFrom="135"
+                android:valueTo="45"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+
+    <target android:name="rightBar">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="@dimen/avd_bars_immersive_duration"
+                android:interpolator="@anim/pathmorph_expandcollapse"
+                android:propertyName="rotation"
+                android:valueFrom="45"
+                android:valueTo="135"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+
+</animated-vector>

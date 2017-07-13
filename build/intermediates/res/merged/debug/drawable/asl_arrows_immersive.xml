@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Not shown!  Just a guide for ThemeActvity.applyArrowsImmersive -->
+
+    <item android:id="@+id/immersive_on" android:state_selected="true">
+        <selector>
+            <item android:state_pressed="true" android:drawable="@drawable/vd_immersive_on_pressed"/>
+            <item android:drawable="@drawable/vd_immersive_on"/>
+        </selector>
+    </item>
+
+    <item android:id="@+id/immersive_off" android:state_selected="false">
+        <selector>
+            <item android:state_pressed="true" android:drawable="@drawable/vd_immersive_off_pressed"/>
+            <item android:drawable="@drawable/vd_immersive_off"/>
+        </selector>
+    </item>
+
+    <!--<item-->
+        <!--android:id="@+id/immersive_on"-->
+        <!--android:drawable="@drawable/vd_immersive_on"-->
+        <!--android:state_selected="true" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/immersive_off"-->
+        <!--android:drawable="@drawable/vd_immersive_off" />-->
+
+    <transition
+        android:drawable="@drawable/avd_arrows_immersive_off_to_on"
+        android:fromId="@id/immersive_off"
+        android:toId="@id/immersive_on" />
+
+    <transition
+        android:drawable="@drawable/avd_arrows_immersive_on_to_off"
+        android:fromId="@id/immersive_on"
+        android:toId="@id/immersive_off" />
+
+</animated-selector>

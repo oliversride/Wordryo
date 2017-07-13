@@ -1,0 +1,326 @@
+[
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/out_arrow.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/out_arrow.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/avd_circle_arrow_up_to_down.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/avd_circle_arrow_up_to_down.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/shuffle.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/shuffle.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/vd_circle_arrow_down.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/vd_circle_arrow_down.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/origin.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/origin.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_disabled.xml",
+        "source": "/Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/res/drawable/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/item_background_material.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/item_background_material.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/avd_pathmorph2_plusminus_minus_to_plus.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/avd_pathmorph2_plusminus_minus_to_plus.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/vd_pathmorph_plusminus_plus.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/vd_pathmorph_plusminus_plus.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/avd_arrows_immersive_on_to_off.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/avd_arrows_immersive_on_to_off.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/avd_pathmorph2_plusminus_plus_to_minus.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/avd_pathmorph2_plusminus_plus_to_minus.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/me_vs_android.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/me_vs_android.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/bkgnd_undo_border.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/bkgnd_undo_border.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/add_blue2.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/add_blue2.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/box_rounded_corners.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/box_rounded_corners.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/vd_immersive_off.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/vd_immersive_off.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/vd_circle_arrow_up.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/vd_circle_arrow_up.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/avd_pathmorph2_pm_minus_to_selected.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/avd_pathmorph2_pm_minus_to_selected.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/vd_immersive_on_pressed.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/vd_immersive_on_pressed.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/res/drawable/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/pass_and_play.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/pass_and_play.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/avd_strength_bar_grow.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/avd_strength_bar_grow.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/asl_pathmorph2_plusminus.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/asl_pathmorph2_plusminus.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/dicticon.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/dicticon.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/btn_default.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/btn_default.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/avd_arrows_immersive_off_to_on.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/avd_arrows_immersive_off_to_on.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/prev_hint.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/prev_hint.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/indicator.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/indicator.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/out_arrow_active.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/out_arrow_active.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/vd_plus_round.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/vd_plus_round.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/zoom.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/zoom.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/relaygame.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/relaygame.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/downarrow.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/downarrow.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/undo.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/undo.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/logo.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/logo.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
+        "source": "/Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/res/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/refresh.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/refresh.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/values.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/values.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/stat_notify_chat.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/stat_notify_chat.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/stat_notify_sync.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/stat_notify_sync.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/expander_ic_minimized.9.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/expander_ic_minimized.9.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/expander_ic_maximized.9.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/expander_ic_maximized.9.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/avd_pathmorph_plusminus_plus_to_minus.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/avd_pathmorph_plusminus_plus_to_minus.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/flip.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/flip.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/sologame.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/sologame.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/icon48x48.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/icon48x48.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/avd_pathmorph2_pm_plus_to_selected.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/avd_pathmorph2_pm_plus_to_selected.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light_focused.xml",
+        "source": "/Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/res/drawable/common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/a_pathmorph2.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/a_pathmorph2.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/sheikh_tuhin_buddy.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/sheikh_tuhin_buddy.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_disabled.xml",
+        "source": "/Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/res/drawable/common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light_normal.xml",
+        "source": "/Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/res/drawable/common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/box.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/box.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_focused.xml",
+        "source": "/Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
+        "source": "/Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/res/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/plus_round.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/plus_round.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/vd_immersive_off_pressed.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/vd_immersive_off_pressed.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "/Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/res/drawable/common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/in_arrow_active.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/in_arrow_active.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/bkgnd_btn_rack.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/bkgnd_btn_rack.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/res/drawable/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/vd_pathmorph2_plusminus_plus.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/vd_pathmorph2_plusminus_plus.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_normal.xml",
+        "source": "/Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/res/drawable/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/asl_pathmorph_plusminus.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/asl_pathmorph_plusminus.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_focused.xml",
+        "source": "/Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/avd_circle_arrow_down_to_up.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/avd_circle_arrow_down_to_up.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/avd_pathmorph_plusminus_minus_to_plus.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/avd_pathmorph_plusminus_minus_to_plus.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_focused.xml",
+        "source": "/Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/res/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/vd_pathmorph_plusminus_minus.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/vd_pathmorph_plusminus_minus.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/next_hint.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/next_hint.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_normal.xml",
+        "source": "/Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/asl_circle_arrow.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/asl_circle_arrow.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/asl_arrows_immersive.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/asl_arrows_immersive.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/notify.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/notify.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/remove_blue.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/remove_blue.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/vd_immersive_on.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/vd_immersive_on.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/vd_minus_round.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/vd_minus_round.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/rightarrow.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/rightarrow.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/vd_pathmorph2_plusminus_minus.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/vd_pathmorph2_plusminus_minus.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable/in_arrow.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable/in_arrow.png"
+    }
+]

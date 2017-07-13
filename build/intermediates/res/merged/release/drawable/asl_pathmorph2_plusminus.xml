@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/plus_selected"
+        android:drawable="@drawable/vd_pathmorph2_plusminus_plus"
+        android:state_checked="false"
+        android:state_selected="true" />
+
+    <item
+        android:id="@+id/minus_selected"
+        android:drawable="@drawable/vd_pathmorph2_plusminus_minus"
+        android:state_checked="true"
+        android:state_selected="true" />
+
+    <item
+        android:id="@+id/minus"
+        android:drawable="@drawable/vd_pathmorph2_plusminus_minus"
+        android:state_checked="true" />
+
+    <item
+        android:id="@+id/plus"
+        android:drawable="@drawable/vd_pathmorph2_plusminus_plus" />
+
+    <transition
+        android:drawable="@drawable/avd_pathmorph2_plusminus_minus_to_plus"
+        android:fromId="@id/minus"
+        android:toId="@id/plus" />
+
+    <transition
+        android:drawable="@drawable/avd_pathmorph2_plusminus_plus_to_minus"
+        android:fromId="@id/plus"
+        android:toId="@id/minus" />
+
+    <transition
+        android:drawable="@drawable/avd_pathmorph2_pm_plus_to_selected"
+        android:fromId="@id/plus"
+        android:toId="@id/plus_selected" />
+
+    <transition
+        android:drawable="@drawable/avd_pathmorph2_pm_minus_to_selected"
+        android:fromId="@id/minus"
+        android:toId="@id/minus_selected" />
+
+</animated-selector>

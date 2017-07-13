@@ -1,0 +1,154 @@
+[
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/player_edit.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/player_edit.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/rename_game.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/rename_game.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/list_item.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/list_item.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/board.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/board.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/smsinviter_item.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/smsinviter_item.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/pref_immersive.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/pref_immersive.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/dict_browse.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/dict_browse.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/game_list.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/game_list.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/relay_game_config.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/relay_game_config.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/chat.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/chat.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/chat_history_local.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/chat_history_local.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/color_display.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/color_display.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/drag_view.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/drag_view.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/logo.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/logo.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/import_dict.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/import_dict.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/btinviter_item.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/btinviter_item.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/pref_playlevel.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/pref_playlevel.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/lookup.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/lookup.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/passwd_view.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/passwd_view.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/divider_view.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/divider_view.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/new_game.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/new_game.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/chat_history_remote.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/chat_history_remote.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/commit_view.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/commit_view.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/about_dlg.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/about_dlg.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/player_list_elem.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/player_list_elem.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/confirm_sms.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/confirm_sms.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/color_edit.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/color_edit.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/pref_players.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/pref_players.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/force_remote.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/force_remote.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/smsinviter.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/smsinviter.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/dict_browser.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/dict_browser.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/dflt_name.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/dflt_name.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/game_list_group.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/game_list_group.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/undo_view.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/undo_view.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/game_list_item.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/game_list_item.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/prefs_w_buttons.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/prefs_w_buttons.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/btinviter.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/btinviter.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/layout/game_config.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/layout/game_config.xml"
+    }
+]

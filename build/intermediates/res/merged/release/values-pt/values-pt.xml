@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_copyright">Copyright (C) 2013 por Oliver\'s Ride. Esse software livre/aberto é liberado sob a Licença Pública GNU.</string>
+    <string name="about_credits">Ícones da barra de ferramentas por
+    Sarah Chu; outros créditos aguardando permissão.</string>
+    <string name="about_versf">Wordryo para Android, Versão %1$s.</string>
+    <string name="about_web">Para um manual ou código fonte veja:
+    http://xwords.sf.net/android.php.  Para reportar bugs, sugerir
+    recursos, oferecer ajuda, etc., por favor envie um email:
+    xwords@eehouse.org.</string>
+    <string name="advanced_config">Configurações de jogo
+    avançadas</string>
+    <string name="alert_empty_dictf">A lista de palavras %s só contém
+    informações de pedras.  Não há palavras para mostrar.</string>
+    <string name="background">Fora do tabuleiro</string>
+    <string name="badwords_accept">\u0020Você ainda quer aceitar essa
+    jogada?</string>
+    <string name="badwords_lost">  Jogada perdida.</string>
+    <string name="badwords_title">Palavra(s) ilegal(is)</string>
+    <string name="blue">Azul</string>
+    <string name="board_menu_dict">Navegar lista de palavras</string>
+    <string name="board_menu_done">Turno encerrado</string>
+    <string name="board_menu_file_about">Sobre</string>
+    <string name="board_menu_file_email">Enviar um email para o autor</string>
+    <string name="board_menu_game_counts">Contagens e valores</string>
+    <string name="board_menu_game_final">Pontuações finais</string>
+    <string name="board_menu_game_history">Histórico do jogo</string>
+    <string name="board_menu_game_left">Pedras restantes</string>
+    <string name="board_menu_game_resend">Reenviar mensagens</string>
+    <string name="board_menu_game_resign">Desistir</string>
+    <string name="board_menu_pass">Pular</string>
+    <string name="board_menu_trade">Trocar pedras</string>
+    <string name="board_menu_tray_hide">Esconder pedras</string>
+    <string name="board_menu_tray_show">Mostrar pedras</string>
+    <string name="board_menu_undo_current">Desfazer/Refazer</string>
+    <string name="board_menu_undo_last">Desfazer última jogada</string>
+    <string name="board_size">Tamanho do tabuleiro</string>
+    <string name="board_submenu_game">Jogo</string>
+    <string name="bonus_l2x">Letra dupla</string>
+    <string name="bonus_l2x_summary">2L</string>
+    <string name="bonus_l3x">Letra tripla</string>
+    <string name="bonus_l3x_summary">3L</string>
+    <string name="bonus_w2x">Palavra dupla</string>
+    <string name="bonus_w2x_summary">2P</string>
+    <string name="bonus_w3x">Palavra tripla</string>
+    <string name="bonus_w3x_summary">3P</string>
+    <string name="bt_bad_protof">Crosswords em %s na versão errada para
+      jogar por Bluetooth.</string>
+    <string name="bt_disabled">Bluetooth não está disponível.  Isso
+    pode significar que seu dispositivo não suporta Bluetooth, ou
+    que a funcionalidade está desligada.</string>
+    <string name="bt_failf">Envios Bluetooth para %1$s falharam muitas vezes.
+        Abra o jogo de novo para tentar novamente.</string>
+    <string name="bt_networked_desc">Criar um jogo entre dispositivos
+    Bluetooth próximos e pareados com o seu.  Ambos botões iniciarão
+    um jogo com outros dispositivos (um ou mais) que você escolher
+    (entre dispositivos pareados que já tenham Crosswords instalado.)
+    O primeiro usa os padrões; o segundo permite que você modifique
+    as configurações antes do início do jogo.</string>
+    <string name="bt_pick_clear_button">Remover selecionados</string>
+    <string name="bt_pick_rescan_button">Varrer novamente</string>
+    <string name="bt_resendf">Envio por Bluetooth para %1$s falhou; nova
+    tentativa %3$d em %2$d segundos.</string>
+    <string name="btname_label">Nome do novo jogo Bluetooth</string>
+    <string name="button_add_player">Adicionar jogador</string>
+    <string name="button_cancel">Cancelar</string>
+    <string name="button_close_game">Fechar jogo</string>
+    <string name="button_decline">Recusar</string>
+    <string name="button_default_both">Ambos</string>
+    <string name="button_default_human">Humano</string>
+    <string name="button_default_robot">Robô</string>
+    <string name="button_delete">Excluir</string>
+    <string name="button_discard">Descartar</string>
+    <string name="button_done">Pronto</string>
+    <string name="button_donef">Pronto com %s</string>
+    <string name="button_download">Baixar</string>
+    <string name="button_html">Email</string>
+    <string name="button_invite">Convidar marcado(s)</string>
+    <string name="button_juggle_players">Embaralhar jogadores</string>
+    <string name="button_lookup">Procurar palavras</string>
+    <string name="button_lookupf">Procurar %s</string>
+    <string name="button_move">Jogar</string>
+    <string name="button_new_game">Adicionar jogo</string>
+    <string name="button_new_group">Adicionar grupo</string>
+    <string name="button_no">Não</string>
+    <string name="button_notagain">Não mostrar novamente</string>
+    <string name="button_ok">OK</string>
+    <string name="button_rematch">Revanche</string>
+    <string name="button_reset">Reiniciar</string>
+    <string name="button_retry">Tentar novamente</string>
+    <string name="button_revert_all">Restaurar tudo</string>
+    <string name="button_revert_colors">Restaurar cores</string>
+    <string name="button_save">Salvar</string>
+    <string name="button_search">Procurar</string>
+    <string name="button_sms_add">Importar contato</string>
+    <string name="button_substdict">Substituir</string>
+    <string name="button_text">SMS/Texto</string>
+    <string name="button_trade_cancel">Cancelar troca</string>
+    <string name="button_trade_commit">Efetuar troca</string>
+    <string name="button_yes">Sim</string>
+    <string name="cannot_delete_default_group">O grupo para novos jogos
+    não pode ser apagado."</string>
+    <string name="change_groupf">Mover jogo %s</string>
+    <string name="changes_button">Mudanças recentes</string>
+    <string name="changes_title">Mudanças recentes</string>
+    <string name="chat_local_id">Eu:\u0020</string>
+    <string name="chat_menu_clear">Limpar histórico</string>
+    <string name="chat_other_id">Outros:\u0020</string>
+    <string name="chat_send">Enviar</string>
+    <string name="chat_titlef">Histórico de mensagens de %s</string>
+    <string name="checkupdates_none_found">Tudo está atualizado.</string>
+    <string name="clr_crosshairs">Cor das linhas</string>
+    <string name="confirm_clear">Tem certeza que você quer apagar o(s)
+    número(s) telefônico(s) selecionado(s)?</string>
+    <string name="confirm_delete">Você tem certeza que quer excluir
+    esse jogo?</string>
+    <string name="confirm_delete_dictf">Você tem certeza que quer
+    excluir %s?</string>
+    <string name="confirm_deletemore_dictf">\u0020Ao menos um jogo
+    está usando, mas há outra lista de palavras em %s instalada que
+    pode substituí-la.</string>
+    <string name="confirm_deleteonly_dictf">\u0020É a única lista de
+    palavras em %s instalada. Um ou mais jogos não poderão ser abertos
+    sem ela.</string>
+    <string name="confirm_reset">Você tem certeza que quer reiniciar
+    esse jogo? Reiniciar apaga todas as jogadas e informações de
+    conexão.</string>
+    <string name="confirm_revert_all">Tem certeza que você quer
+    restaurar todas as configurações para seus valores
+    originais?</string>
+    <string name="confirm_revert_colors">Tem certeza que você quer
+    restaurar todas as configurações de cores para seus valores
+    originais?</string>
+    <string name="confirm_save">Esse jogo está em progresso. Se você
+    salvar essas mudanças, ele precisa ser reiniciado. Você quer salvar
+    essas mudanças?</string>
+    <string name="confirm_save_title">Confirmação de salvamento</string>
+    <string name="confirm_sms_expl">Aviso: esse recurso é para
+    telefones com planos de mensagens de texto ilimitadas. Quando
+    você habilitá-lo, dúzias de mensagens de texto (SMS) serão enviadas
+    (de forma invisível) para cada partida jogada. Se você não tem
+    um plano ilimitado, sua operadora poderá cobrar cada mensagem.\n\n
+    Permitir jogos por SMS?</string>
+    <string name="confirm_sms_leave">Não: deixar desligado</string>
+    <string name="confirm_sms_prompt">Permitir jogos por SMS?</string>
+    <string name="confirm_sms_title">Confirme seu plano de SMS</string>
+    <string name="confirm_sms_unlimited">Sim: eu tenho mensagens de texto
+    ilimitadas</string>
+    <string name="confirm_sms_willpay">Sim: vou pagar todas as mensagens
+    para a operadora</string>
+    <string name="confirm_undo_last">Você tem certeza que quer desfazer a
+    última jogada? (Não há opção de refazer.)</string>
+    <string name="connect_daily">Uma vez por dia</string>
+    <string name="connect_fifteen_mins">A cada 15 minutos</string>
+    <string name="connect_five_mins">A cada 5 minutos</string>
+    <string name="connect_frequency">Checagem de jogadas em
+    segundo plano</string>
+    <string name="connect_label_relay">Conexão (via internet)</string>
+    <string name="connect_label_sms">Conexão (por SMS/texto)</string>
+    <string name="connect_never">Nunca checar</string>
+    <string name="connect_one_hour">A cada hora</string>
+    <string name="connect_six_hours">A cada seis horas</string>
+    <string name="connect_thirty_mins">A cada 30 minutos</string>
+    <string name="connstat_bt">bluetooth</string>
+    <string name="connstat_lastother_succ">(Última falha foi %1$s)</string>
+    <string name="connstat_lastother_unsucc">(Último envio com sucesso foi
+    %1$s)</string>
+    <string name="connstat_lastreceipt">Último recebimento foi %1$s</string>
+    <string name="connstat_lastsend">Último envio foi %1$s (%2$s)</string>
+    <string name="connstat_net">Informações de rede para jogo conectado
+    por %1$s:</string>
+    <string name="connstat_nonet">Este é um jogo independente. Não
+    há informações de rede.</string>
+    <string name="connstat_noreceipt">Nenhuma mensagem foi recebida.</string>
+    <string name="connstat_relay">internet/retransmissor</string>
+    <string name="connstat_sms">sms/texto</string>
+    <string name="connstat_succ">com sucesso</string>
+    <string name="connstat_unsucc">sem sucesso</string>
+    <string name="counts_values_title">Contagem de pedras e
+    valores</string>
+    <string name="cur_tilesf">Escolhedor de pedras\n(até agora: %s)</string>
+    <string name="default_dict">Listas de palavras para humanos</string>
+    <string name="default_loc">Armazenar listas de palavras internamente</string>
+    <string name="default_loc_summary">(Não na memória externa/cartão SD)</string>
+    <string name="default_name_message">Obrigado por instalar o 
+      Crosswords! Preencha seu nome aqui. Será usado quando novos
+      jogos forem criados.  (Você pode mudá-lo depois na seção
+      \"Padrões para novos jogos\" das Configurações.)</string>
+    <string name="default_name_title">Bem-vindo</string>
+    <string name="default_phonies">Gerenciar palavras \"falsas\"</string>
+    <string name="default_robodict">Listas de palavras para robôs</string>
+    <string name="dft_namef">Jogo %X</string>
+    <string name="dft_sms_namef">Jogo SMS %X</string>
+    <string name="dict_browse_nowordsf">Nenhuma palavra em %1$s começa com
+      %2$s.</string>
+    <string name="dict_browse_title1f">%1$s (%2$d palavras usando %3$d
+      pedras)</string>
+    <string name="dict_browse_titlef">%1$s (%2$d palavras usando %3$d-%4$d
+      pedras)</string>
+    <string name="dict_lang_labelf">Lista de palavras (em %s)</string>
+    <string name="dicts_item_move">Mudar o local de armazenamento</string>
+    <string name="dicts_item_select">Tornar padrão</string>
+    <string name="dicts_list_promptf">Listas de palavras instaladas
+    (em %s)</string>
+    <string name="download_dicts">Baixar mais...</string>
+    <string name="download_done">Download concluído</string>
+    <string name="download_failed">Download falhou</string>
+    <string name="download_path_title">Diretório de downloads</string>
+    <string name="downloading_dictf">Baixando %s...</string>
+    <string name="downloadingf">Baixando %s...</string>
+    <string name="dup_game_queryf">Você já tem um jogo aparentemente
+    criado (em %1$s) do mesmo convite.  Tem certeza que você quer
+    criar outro?</string>
+    <string name="email_author_chooser">Enviar comentário por</string>
+    <string name="email_author_subject">Comentário sobre Crosswords</string>
+    <string name="email_body_revf">(Se relevante, por favor inclua a
+    versão: \"%s\"; e marca/modelo do seu telefone ou tablet.)"</string>
+    <string name="empty">Casa vazia/fundo</string>
+    <string name="empty_games_list">Use o botão abaixo para criar um
+    jogo. Toque num jogo existente para continuá-lo ou dê um toque
+    longo para outras opções.</string>
+    <string name="empty_games_list2">Você pode esconder essa mensagem
+    e os botões abaixo na seção Aparência das Configurações (acessadas
+    através do botão menu do seu dispositivo.)</string>
+    <string name="empty_list_msg">Use a tecla menu para adicionar um
+    jogo.</string>
+    <string name="empty_sms_inviter">Lista telefônica vazia. Use o
+    botão \"Importar contato\" para adicionar pessoas que você
+    deseja convidar, ou o botão + para entrar números
+    diretamente.</string>
+    <string name="enable_sms">Permitir jogos por SMS</string>
+    <string name="enable_sms_summary">Apenas se você tiver mensagens de
+    texto ilimitadas!</string>
+    <string name="entering_trade">Toque nas pedras para
+    selecionar...</string>
+    <string name="explain_b1">• Combinar um nome de sala com o outro
+    jogador.</string>
+    <string name="explain_b2">• Preencher o nome da sala na primeira
+    caixa abaixo. Os nomes de sala em seus dois dispositivos devem
+    ser idênticos.</string>
+    <string name="explain_b3">• Opcionalmente, entrar com os nomes
+    dos jogadores na segunda caixa (um por dispositivo)</string>
+    <string name="explain_b4">• Pressione \"Jogar\" em ambos os
+    dispositivos para iniciar o jogo.</string>
+    <string name="explain_robot">Explicar jogadas dos outros</string>
+    <string name="explain_robot_summary">Mostrar resumo da pontuação
+    depois de cada jogada remota ou de um robô</string>
+    <string name="finalscores_title">Pontuações finais</string>
+    <string name="force_expl">Num jogo com múltiplos dispositivos
+    deve haver pelo menos um jogador desse dispositivo e outro jogador
+    que não seja desse dispositivo. Por favor confira os jogadores
+    remotos.</string>
+    <string name="force_title">Jogador(es) remoto(s)</string>
+    <string name="forced_consistent">Primeiro jogador modificado.</string>
+    <string name="gameOver">Jogo encerrado</string>
+    <string name="game_btname_title">Nome do jogo Bluetooth</string>
+    <string name="game_item_menu_titlef">Ações para \"%s\":</string>
+    <string name="game_list_tmp">Carregando resumo do jogo...</string>
+    <string name="game_locked">Travar configurações</string>
+    <string name="game_name_group_title">Nomear grupo</string>
+    <string name="game_rename_title">Renomear jogo</string>
+    <string name="game_smsname_title">Nome do seu jogo</string>
+    <string name="game_summary_field_empty">\u003cNada\u003E</string>
+    <string name="game_summary_field_language">Idioma do jogo</string>
+    <string name="game_summary_field_opponents">Nome(s) do(s)
+    oponente(s)</string>
+    <string name="game_summary_field_state">Estado do jogo</string>
+    <string name="gamef">Jogo %d</string>
+    <string name="gamel_menu_checkmoves">Checar jogadas</string>
+    <string name="gamel_menu_checkupdates">Checar atualizações</string>
+    <string name="gamel_menu_delete_all">Excluir todos</string>
+    <string name="gamel_menu_dicts">Listas de palavras</string>
+    <string name="get_sms_number">Entre o número telefônico:</string>
+    <string name="green">Verde</string>
+    <string name="group_confirm_del">Você tem certeza que quer apagar
+    esse grupo?</string>
+    <string name="group_confirm_delf">\u0020(Ele contém %d jogo(s),
+    que também serão apagados.)</string>
+    <string name="group_cur_games">Meus jogos</string>
+    <string name="group_namef">%1$s (%2$d jogos)</string>
+    <string name="group_new_games">Novos jogos</string>
+    <string name="guest_name">(Jogador remoto)</string>
+    <string name="hide_crosshairs">Desligar mira</string>
+    <string name="hide_crosshairs_summary">Não indicar visualmente
+    a casa do tabuleiro selecionada</string>
+    <string name="hide_intro">Esconder dicas da tela principal</string>
+    <string name="hide_intro_summary">São úteis somente quando você
+    está começando...</string>
+    <string name="hide_title">Esconder barra de título</string>
+    <string name="hide_title_summary">Esconder o nome do jogo faz com
+    quê o tabuleiro fique um pouquinho maior</string>
+    <string name="hints_allowed">Permitir dicas</string>
+    <string name="hints_allowed_sum">Permitir recurso de dicas</string>
+    <string name="history_title">Histórico do jogo</string>
+    <string name="ids_badwords">Palavra(s) %1$s não encontrada(s) na
+    lista de palavras %2$s.</string>
+    <string name="ids_endnow">Você tem certeza que quer
+    desistir?</string>
+    <string name="info_title">Para sua informação...</string>
+    <string name="inform_dict_diffdictf">Você está usando a lista de
+    palavras %1$s mas o hospedeiro do jogo está usando %2$s. Você gostaria de
+    usar %3$s também?</string>
+    <string name="inform_dict_diffversionf">Você e o hospedeiro
+    desse jogo estão usando versões diferentes da lista de palavras
+    %1$s.</string>
+    <string name="inform_dict_download">\u0020(Você terá que baixá-la
+    primeiro.)</string>
+    <string name="inform_dict_title">Diferença entre listas de palavras</string>
+    <string name="init_autojuggle">Embaralhar jogadores</string>
+    <string name="init_autojuggle_sum">Aleatoriamente, para novos
+    jogos</string>
+    <string name="initial_player_minutes">Minutos para cada
+    jogador</string>
+    <string name="invite_bt_descf">Por favor selecione o(s) %d dispositivo(s)
+    que você quer incluir nesse jogo. Use o botão Varrer novamente se
+    você não vê um dispositivo esperado.</string>
+    <string name="invite_chooser_email">email</string>
+    <string name="invite_chooser_sms">sms</string>
+    <string name="invite_chooserf">Enviar convite por %s</string>
+    <string name="invite_dict_missing_body_nonamef">Você foi convidado
+    a jogar Crosswords usando a lista de palavras %2$s (para jogar em
+    %3$s), mas ela não está instalada. Você gostaria de baixar a
+    lista de palavras?</string>
+    <string name="invite_dict_missing_bodyf">%1$s lhe convidou para 
+    jogar Crosswords usando a lista de palavras %2$s (para jogar em %3$s),
+    mas ela não está instalada. Você gostaria de baixar a lista de palavras
+    ou recusar o convite?</string>
+    <string name="invite_dict_missing_title">Lista de palavras faltando</string>
+    <string name="invite_htmf">\u003ca href=\"%1$s\"\u003EPressione aqui
+    \u003c/a\u003E (ou selecione o link completo abaixo, ou se você já
+    tem Crosswords instalado, abra o anexo) para aceitar meu convite e
+    participar desse jogo.
+
+    \u003cbr \\\u003E
+    \u003cbr \\\u003E
+    (link completo: %1$s )
+    </string>
+    <string name="invite_msgf">Faltam %1$d jogador(es) remoto(s) desse
+    jogo. Você gostaria de convidar alguém -- se é que já não
+    convidou?</string>
+    <string name="invite_multiple">\u0020(Você está esperando vários
+    jogadores remotos.  Certifique-se de convidar o número certo de
+    pessoas.)</string>
+    <string name="invite_progress">Enviando informações do jovo jogo...</string>
+    <string name="invite_sms_descf">Por favor marque o(s) %d número(s)
+    de telefone que você deseja convidar para seu jogo novo, e então
+    pressione \"Convidar marcado(s)\".</string>
+    <string name="invite_subjectf">Vamos jogar Crosswords (Sala %s)</string>
+    <string name="invite_success">Convite recebido.</string>
+    <string name="invite_txtf">Vamos jogar Crosswords! Participe desse
+    jogo: %1$s .</string>
+    <string name="join_room">Entrar em sala pública</string>
+    <string name="keep_screenon">Manter tela ligada</string>
+    <string name="keep_screenon_summary">Manter a tela do tabuleiro
+    ligada por 10 minutos</string>
+    <string name="key_bonushint">Texto das casas de bônus</string>
+    <string name="lang_label">Idioma do jogo</string>
+    <string name="langdict_label">Idioma do jogo/lista de palavras</string>
+    <string name="list_group_default">Colocar novos jogos aqui</string>
+    <string name="list_group_delete">Apagar</string>
+    <string name="list_group_movedown">Mover para baixo</string>
+    <string name="list_group_moveup">Mover para cima</string>
+    <string name="list_group_rename">Renomear</string>
+    <string name="list_item_config">Configurações do jogo...</string>
+    <string name="list_item_copy">Copiar</string>
+    <string name="list_item_delete">Excluir</string>
+    <string name="list_item_move">Mover para grupo...</string>
+    <string name="list_item_new_from">Novo a partir de</string>
+    <string name="list_item_rename">Renomear...</string>
+    <string name="list_item_reset">Reiniciar</string>
+    <string name="loc_builtin">Internas</string>
+    <string name="loc_downloads">Baixadas</string>
+    <string name="loc_external">Externa</string>
+    <string name="loc_internal">Interna</string>
+    <string name="local_name_hint">Nome do jogador</string>
+    <string name="manual_owner_name">(Não está nos contatos)</string>
+    <string name="max_len">Tamanho máximo</string>
+    <string name="menu_chat">Conversa</string>
+    <string name="menu_flip">Espelhar tabuleiro</string>
+    <string name="menu_hint_next">Próxima dica</string>
+    <string name="menu_hint_prev">Dica anterior</string>
+    <string name="menu_juggle">Embaralhar mão</string>
+    <string name="menu_prefs">Configurações</string>
+    <string name="menu_toggle_values">Modificar valores</string>
+    <string name="menu_zoom">Aumentar/diminuir zoom</string>
+    <string name="min_len">Tamanho mínimo</string>
+    <string name="minutes_label">Minutos por jogador</string>
+    <string name="missing_dict_detail">Lista de palavras necessária faltando</string>
+    <string name="missing_dict_title">Convite de jogo pendente</string>
+    <string name="missing_player">(ainda não chegou...)</string>
+    <string name="move_dictf">Local para a lista de palavras %1$s</string>
+    <string name="movesf">%d turnos jogados</string>
+    <string name="msg_ask_password">Senha para \"%s\":</string>
+    <string name="msg_dev_deleted">Esse jogo foi apagado em outro
+    dispositivo. Você não poderá jogá-lo mais.</string>
+    <string name="msg_dup_room">Outro hospedeiro já registrou uma sala
+    usando esse nome. Mude o nome da sua ou tente novamente mais
+    tarde.</string>
+    <string name="msg_lost_other">O retransmissor perdeu contato com
+    outro dispositivo nesse jogos.</string>
+    <string name="msg_no_room">Nenhum hospedeiro tem uma sala registrada
+    com esse nome.</string>
+    <string name="msg_relay_all_heref">Todos os jogadores aqui estão
+    na sala \"%s\".</string>
+    <string name="msg_relay_waiting">Dispositivo %1$d conectado ao
+    retransmissor na sala \"%2$s\". Esperando por %3$d jogador(es).</string>
+    <string name="msg_too_many">Você está fornecendo mais jogadores
+    do que o hospedeiro espera.</string>
+    <string name="msgs_progress">Checando retransmissor por jogadas
+      etc...</string>
+    <string name="nethints_allowed">Permitir dicas (em rede)</string>
+    <string name="nethints_allowed_sum">Permitir dicas para jogos
+    de dois dispositivos</string>
+    <string name="network_behavior">Configurações de jogos de
+    rede</string>
+    <string name="network_behavior_summary">Configurações aplicáveis
+    a jogos de rede</string>
+    <string name="new_app_avail">Toque para baixar e instalar</string>
+    <string name="new_app_availf">Nova versão de %s</string>
+    <string name="new_bt_bodyf">Dispositivo pareado %s te convidou para jogar</string>
+    <string name="new_bt_title">Novo jogo por Bluetooth</string>
+    <string name="new_btmove_title">Nova jogada por Bluetooth</string>
+    <string name="new_dict_avail">Nova lista de palavras disponível</string>
+    <string name="new_dict_availf">Toque para atualizar %s</string>
+    <string name="new_move_body">Uma ou mais jogadas chegaram</string>
+    <string name="new_name_bodyf">%s te convidou para jogar</string>
+    <string name="new_room_hint">Nome da sala</string>
+    <string name="new_sms_title">Novo jogo por SMS</string>
+    <string name="new_smsmove_title">Nova jogada por SMS</string>
+    <string name="newbie_title">Informações para usuários novos</string>
+    <string name="newgame_bt_header">Novo jogo por Bluetooth</string>
+    <string name="newgame_enable_bt">Ligar Bluetooth</string>
+    <string name="newgame_enable_sms">Configurações de início</string>
+    <string name="newgame_invite">Convidar agora</string>
+    <string name="newgame_local">Jogar agora</string>
+    <string name="newgame_local_config">Configurar primeiro</string>
+    <string name="newgame_local_descf">Criar um novo jogo onde todos
+    os jogadores usarão esse dispositivo. Para jogar contra um robô
+    e com as configurações padrão (em %1$s, etc.) pressione \"Jogar
+    agora\". Para adicionar jogadores ou mudar configurações,
+    pressione \"Configurar primeiro\".</string>
+    <string name="newgame_local_header">Novo jogo local</string>
+    <string name="newgame_net_config">Configurar primeiro</string>
+    <string name="newgame_networked_desc">Criar um jogo através da
+    rede. O botão \"Convidar agora\" inicia um jogo com dois
+    dispositivos e permite a você convidar um amigo. Ou pressione
+    \"Configurar primeiro\" para modificar as configurações
+    padrão antes de iniciar o jogo de rede. (Você poderá enviar
+    convites depois.)</string>
+    <string name="newgame_networked_header">Novo jogo de rede</string>
+    <string name="newgame_sms_header">Novo jogo SMS</string>
+    <string name="newgroup_label">Nomeie seu novo grupo:</string>
+    <string name="no_copy_network">Jogos que já se conectaram ao
+    retransmissor não podem ser copiados. Use \"Novo a partir de\"
+    para uma cópia pronta para jogar com todas as mesmas
+    configurações.</string>
+    <string name="no_dict_finish">Uma lista de palavras usada por
+    esse jogo desapareceu. (Geralmente isso significa que ela está num
+    cartão de memória externo que não está mais disponível.)</string>
+    <string name="no_dict_substf">Não foi possível abrir o jogo \"%1$s\"
+    porquê a lista de palavras %2$s não foi encontrada. (Pode ter sido
+    apagada, ou armazenada em um cartão de memória externo que não
+    está mais disponível.) Você pode baixar outra lista de palavras ou
+    substituí-la por outra em %3$s.</string>
+    <string name="no_dict_title">Lista de palavras não
+    encontrada</string>
+    <string name="no_dictf">Você precisa baixar uma lista de palavras
+    substituta em %2$santes de poder abrir o jogo \"%1$s\". (A original
+    pode ter sido apagada ou armazenada em um cartão de memória externo
+    que não está mais disponível.)</string>
+    <string name="no_download_warning">Não foi possível baixar. Você
+    tem um navegador web instalado?</string>
+    <string name="no_empty_rooms">Esse jogo não pode se conectar sem
+    um nome de sala.</string>
+    <string name="no_games_to_refresh">Nenhum jogo encontrado que conecta
+    pelo retransmissor.</string>
+    <string name="no_move_onegroup">Não é possível mover até que exista
+    mais de um grupo.</string>
+    <string name="no_moves_made">(Nenhuma jogada)</string>
+    <string name="no_name_found_f">Não foram encontradas salas públicas
+    para jogos de %1$d jogadores em %2$s. Tente recarregar ou criar sua
+    própria sala.</string>
+    <string name="not_again_arrow">Movendo pedras para o tabuleiro:\n
+    Você pode arrastar pedras entre a mão e o tabuleiro, ou você pode
+    selecionar uma casa vazia para posicionar a seta. As pedras da mão
+    selecionadas serão colocadas na posição da seta (empurrando-a uma
+    casa na direção que ela aponta.) Selecione a seta uma vez para
+    mudar sua orientação, e uma segunda vez para escondê-la. Uma
+    caixa de seleção na seção Aparência das Configurações pode ser
+    usada para escondê-la de forma permanente.</string>
+    <string name="not_again_browse">Esse botão abre o navegador de
+    listas de palavras na lista do jogador atual.</string>
+    <string name="not_again_chat">Esse botão abre a tela para troca de
+    mensagens entre dispositivos desse jogo. As mensagens serão guardadas
+    até que você apague o jogo que as contenha.</string>
+    <string name="not_again_conndall">Você conectou e entrou num jogo
+    no retransmissor, a sala agora está cheia. O dispositivo que criou
+    a sala fará a distribuição inicial de pedras e o jogo pode
+    começar.</string>
+    <string name="not_again_conndfirst">Você conectou e iniciou um
+    jogo numa sala nova.  Depois que os dispositivos restantes
+    tiverem entrado na sala e o Crosswords tiver distribuído as pedras,
+    o jogo pode começar.</string>
+    <string name="not_again_conndmid">Você conectou e entrou num
+    jogo no retransmissor. Você será notificado quando o(s)
+    dispositivo(s) restantes(s) tiver(em) entrado na sua sala e
+    o jogo puder começar.</string>
+    <string name="not_again_done">Selecionar o contador \"ptos\" que
+    aparece à direita da mão é a maneira mais fácil de confirmar uma
+    jogada.</string>
+    <string name="not_again_flip">Esse botão espelha o tabuleiro no
+    eixo diagonal.</string>
+    <string name="not_again_hintnext">Esse botão mostra todas as jogadas
+    possívels em ordem decrescente (usando as pedras à direita do
+    divisor.)</string>
+    <string name="not_again_hintprev">Esse botão mostra todas as jogadas
+    possíveis em ordem crescente (usando as pedras à direita do
+    divisor.)</string>
+    <string name="not_again_juggle">Esse botão rearranja as pedras da mão
+    aleatoriamente.</string>
+    <string name="not_again_lookup">Esse botão permite que você
+    procure as palavras recém jogadas online.  (Nem todos os
+    idiomas são suportados.)</string>
+    <string name="not_again_newfrom">Criar um novo jogo pronto para
+    começar usando todas as configurações do jogo atual. Isto é, tratar
+    esse jogo como um modelo.</string>
+    <string name="not_again_sync">Essa ação procura no retransmissor
+    por jogadas/mensagens pendentes para todos os jogos de rede e
+    marca aqueles com jogadas pendentes. Quando você abrir um jogo
+    marcado, ele fará a conexão e sincronização. (Numa versão futura
+    as jogadas serão baixadas em segundo plano.)</string>
+    <string name="not_again_trading">Você está entrando no modo de
+    troca de pedras. Selecione as pedras para adicionar/remover do
+    conjunto que será trocado. Use os botões para confirmar sua
+    jogada ou para sair do modo de troca.</string>
+    <string name="not_again_turnchanged">O jogador da vez é mostrado
+    em letras maiores na área de pontuação. Segure seu dedo sobre um
+    nome para ver detalhes sobre a última jogada daquele
+    jogador.</string>
+    <string name="not_again_undo">Esse botão desfaz ou refaz a jogada
+    atual.</string>
+    <string name="not_again_unlock">Esse jogo está em andamento. 
+    Algumas configurações, por exemplo o número de jogadores, não
+    podem ser mudadas sem reiniciá-lo.  Quando você sair dessa
+    página você terá a chance de descartar mudanças para evitar o
+    reinício.</string>
+    <string name="not_again_values">Esse botão alterna a exibição de
+    letras das pedras jogadas no tabuleiro ou seus valores em pontos.
+    Use-o para ver o valor de cada pedra.</string>
+    <string name="not_again_zoom">Esse botão alterna o tabuleiro entre
+    o tamanho normal e com zoom. Arraste-o durante o zoom para ver
+    as partes escondidas.</string>
+    <string name="notify_bodyf">Atividade no jogo "%s"</string>
+    <string name="notify_other_summary">Quando chegarem jogadas de
+    oponentes</string>
+    <string name="notify_sound">Alerta sonoro</string>
+    <string name="notify_title">Jogadas feitas</string>
+    <string name="notify_vibrate">Vibrar</string>
+    <string name="password_label">Senha</string>
+    <string name="peek_other">Ver pedras fora da vez</string>
+    <string name="peek_other_summary">Encostar no nome de um jogador
+    ao lado dos pontos mostra as suas pedras</string>
+    <string name="phone_label">Número(s) conectado(s):</string>
+    <string name="phonies_disallow">Não permitir falsas</string>
+    <string name="phonies_ignore">Ignorar falsas</string>
+    <string name="phonies_spinner_prompt">Como lidar com palavras \"falsas\"
+        (que não estão na lista de palavras)</string>
+    <string name="phonies_warn">Avisar se for falsa</string>
+    <string name="pick_faceup">Escolher pedras viradas para cima</string>
+    <string name="pick_url_titlef">Procurar %s em</string>
+    <string name="play">Jogar</string>
+    <string name="player0">Primeiro jogador</string>
+    <string name="player1">Segundo jogador</string>
+    <string name="player2">Terceiro jogador</string>
+    <string name="player3">Quarto jogador</string>
+    <string name="player_edit_title">Editar jogador</string>
+    <string name="player_label">Nome:</string>
+    <string name="playerf">Jogador %d</string>
+    <string name="players_label_host">Jogadores (%1$d local, %2$d
+      remoto)</string>
+    <string name="players_label_standalone">Jogadores</string>
+    <string name="players_missf">Falta(m) %d jogador(es)</string>
+    <string name="pref_player1_name">Primeiro jogador</string>
+    <string name="pref_player2_name">Segundo jogador</string>
+    <string name="pref_player3_name">Terceiro jogador</string>
+    <string name="pref_player4_name">Quarto jogador</string>
+    <string name="prefs_appearance">Aparência</string>
+    <string name="prefs_appearance_summary">Configurações de
+    aparência</string>
+    <string name="prefs_behavior">Comportamento</string>
+    <string name="prefs_behavior_summary">Configurações do
+    comportamento do aplicativo</string>
+    <string name="prefs_colors">Cores individuais</string>
+    <string name="prefs_colors_summary">Editar as cores usadas
+    no tabuleiro</string>
+    <string name="prefs_defaults">Padrões para novos jogos</string>
+    <string name="prefs_defaults_summary">Configurações padrão
+    para jogos novos</string>
+    <string name="prefs_dicts">Listas de palavras</string>
+    <string name="prefs_dicts_summary">Listas de palavras padrão</string>
+    <string name="prefs_names">Nomes dos jogadores</string>
+    <string name="prefs_names_summary">Nomes padrão dos jogadores</string>
+    <string name="prompt_max_len">Palavras de no máximo</string>
+    <string name="prompt_min_len">Palavras de no mínimo</string>
+    <string name="pts">ptos</string>
+    <string name="public_names_progress">Buscando salas públicas para
+    jogos de %1$d- jogadores em %2$s.</string>
+    <string name="query_title">Uma pergunta...</string>
+    <string name="query_tradef">Você tem certeza que quer trocar as
+    pedras selecionadas (%s)?</string>
+    <string name="red">Vermelho</string>
+    <string name="relay_alert">Problema na conexão</string>
+    <string name="relay_game_explainf">Para iniciar um jogo de rede
+    básico com dois jogadores em %s:</string>
+    <string name="reload_new_dict">Recarregando jogo com %1$s</string>
+    <string name="remote_label">Jogador remoto</string>
+    <string name="remote_undone">Dispositivo remoto desfez uma jogada.</string>
+    <string name="rename_group_label">Mudar o nome desse grupo para:</string>
+    <string name="rename_label">Mudar o nome desse jogo para:</string>
+    <string name="ringer_zoom">Zoom com botões de volume</string>
+    <string name="ringer_zoom_summary">Aumentar ou diminuir o
+    tabuleiro com os botões de volume</string>
+    <string name="robot_label">Jogador robô</string>
+    <string name="robot_namef">%s (robô)</string>
+    <string name="robot_smart">Robô esperto</string>
+    <string name="robot_smarter">Robô mais esperto</string>
+    <string name="robot_smartest">Robô ainda mais esperto</string>
+    <string name="robot_spinner_prompt">Quão esperto é o jogador robô?</string>
+    <string name="room_public">Tornar nova sala pública</string>
+    <string name="room_public_prompt">Selecionar sala pública</string>
+    <string name="scan_progress">Procurando por Crosswords em dispositivos pareados</string>
+    <string name="set_default_messagef">Para que jogadores essa lista
+    de palavras deve ser a padrão para novos jogos? (o idioma %s será
+    padrão para ambos.)</string>
+    <string name="settings_label">Outras configurações</string>
+    <string name="show_arrow">Mostrar a seta no tabuleiro</string>
+    <string name="show_arrow_summary">Pedras selecionadas são
+    colocadas nessa seta quando ela estiver visível</string>
+    <string name="skip_confirm_turn">Pular confirmação de
+    jogada</string>
+    <string name="skip_confirm_turn_summary">NÃO mostrar o resumo
+    da pontuação após cada jogada humana</string>
+    <string name="sms_disabled">Jogar por SMS está desabilitado. Você
+    pode habilitar nas configurações de Rede.</string>
+    <string name="sms_networked_desc">Criar um jogo através de
+    mensagens de texto invisíveis. O botão \"Convidar agora\" inicia
+    um jogo com dois dispositivos e ajuda você a convidar um amigo.
+    Ou aperte \"Configurar primeiro\" para mudar alguns dos padrões
+    antes de iniciar seu jogo SMS. (Você poderá enviar convites
+    posteriormente.)</string>
+    <string name="sms_or_email">Enviar convite através de SMS (mensagem
+    de texto) or por email?</string>
+    <string name="smsname_label">Nome do novo jogo SMS</string>
+    <string name="square_tiles">Peças quadradas</string>
+    <string name="square_tiles_summary">Mesmo se puderem ser mais altas</string>
+    <string name="str_bonus_all">Bônus por usar todas as pedras: 50\n</string>
+    <string name="str_cant_hint_while_disabled">O recurso de dicas
+    está desligado para esse jogo. Você pode ligá-lo para um novo
+    jogo na tela de Configurações.</string>
+    <string name="str_cant_undo_tileassign">Não é possível desfazer
+    a jogada.</string>
+    <string name="str_commit_confirm">Executar a jogada atual?\n</string>
+    <string name="str_game_namef">%1$s (%2$s)</string>
+    <string name="str_lostturn">Vez perdida</string>
+    <string name="str_no_empties_in_turn">Não podem haver casas em
+    branco entre pedras jogadas.</string>
+    <string name="str_no_peek_remote_tiles">Não pode ver as pedras do
+    jogador remoto!</string>
+    <string name="str_no_peek_robot_tiles">Não pode ver as pedras do
+    robô!</string>
+    <string name="str_nonlocal_namef">%s (remoto)</string>
+    <string name="str_not_your_turn">Você não pode jogar, não é sua
+    vez!</string>
+    <string name="str_pass"> - %d [tempo]</string>
+    <string name="str_passed">Passou</string>
+    <string name="str_phony_rejected">Jogada com palavra ilegal;
+    perdeu a vez!</string>
+    <string name="str_reg_server_sans_remote">Pelo menos um jogador deve
+    ser marcado como \"Remoto\" para um jogo iniciado como Hospedeiro.</string>
+    <string name="str_reg_unexpected_user">Tentativa de registro de
+    jogador(es) inesperado(s) foi recusada</string>
+    <string name="str_remote_movedf">Jogador remoto %1$s fez esta
+    jogada:\u0020</string>
+    <string name="str_resigned">Desistiu</string>
+    <string name="str_robot_moved">O robô fez esta jogada:\u0020</string>
+    <string name="str_server_dict_wins">Conflito entre listas de
+    palavras do Hospedeiro e Convidado; Hospedeiro prevalece.</string>
+    <string name="str_tiles_must_contact">Novas pedras devem encostar
+    em outras já colocadas (ou na casa central na primeira
+    jogada)</string>
+    <string name="str_tiles_not_in_line">Todas as pedras de uma jogada
+    devem estar na mesma linha ou coluna.</string>
+    <string name="str_too_few_tiles_left_to_trade">Número de pedras
+    restantes insuficiente para fazer a troca.</string>
+    <string name="str_two_tiles_first_move">Duas ou mais pedras devem
+    ser jogadas na primeira vez.</string>
+    <string name="str_winner">Ganhador</string>
+    <string name="strd_cumulative_score">Pontuação cumulativa: %d\n</string>
+    <string name="strd_remaining_tiles_add">+ %d [todas as pedras restantes]</string>
+    <string name="strd_remains_expl">%d pedras restantes na pilha e
+    com o(s) jogador(es):\n</string>
+    <string name="strd_remains_header">%d pedras restantes na pilha.</string>
+    <string name="strd_robot_traded">trocou %d pedras.</string>
+    <string name="strd_time_penalty_sub"/>
+    <string name="strd_traded">%d pedras trocadas</string>
+    <string name="strd_turn_score">Pontuação pela jogada: %d\n</string>
+    <string name="strd_unused_tiles_sub">- %d [pedras não usadas]</string>
+    <string name="strs_move_across">jogada (de %s transversal)\n</string>
+    <string name="strs_move_down">jogada (de %s abaixo)\n</string>
+    <string name="strs_new_tiles">Novas pedras: %s</string>
+    <string name="strs_tray_at_start">Pedras iniciais: %s\n</string>
+    <string name="strs_values_header">%s contagens/valores:\n</string>
+    <string name="strsd_summaryscored">%1$s:%2$d</string>
+    <string name="strss_traded_for">Trocou %1$s por %2$s.</string>
+    <string name="subst_dict_title">Lista de palavras substituta
+    (número de palavras)</string>
+    <string name="summary_conn">Jogo em andamento</string>
+    <string name="summary_conn_sms">Jogo em andamento com %s</string>
+    <string name="summary_field">Incluir na listagem de jogos</string>
+    <string name="summary_gameover">Fim de jogo</string>
+    <string name="summary_relay_conff">Configurado para a sala
+      \"%s\"</string>
+    <string name="summary_relay_connf">Jogo em progresso na sala \"%s\"</string>
+    <string name="summary_relay_gameoverf">Jogo encerrado na sala \"%s\"</string>
+    <string name="summary_relay_waitf">Esperando por jogadores na sala
+      \"%s\"</string>
+    <string name="summary_sort_tiles">Ordenar a mão quando novas
+    pedras são adicionadas</string>
+    <string name="summary_wait_guest">Desconectado</string>
+    <string name="summary_wait_host">Esperando por conexão(ões)</string>
+    <string name="tell_unused">Ainda não usado...</string>
+    <string name="tile_back">Fundo das pedras</string>
+    <string name="tilepick_all">Escolher para mim</string>
+    <string name="tilepick_undo">Desfazer última</string>
+    <string name="tiles_left_title">Pedras restantes</string>
+    <string name="title_dicts_list">Listas de palavras instaladas</string>
+    <string name="title_game_configf">Configurações de %s</string>
+    <string name="title_gamebt_configf">Configurações de %s (via Bluetooth)</string>
+    <string name="title_gamenet_configf">Configurações de %s (rede)</string>
+    <string name="title_langs_list">Idiomas (baseado nas listas de palavras
+    instaladas)</string>
+    <string name="title_lookup">Selecione para procurar</string>
+    <string name="title_prefs">Configurações de Crosswords</string>
+    <string name="title_sort_tiles">Ordenar novas pedras</string>
+    <string name="title_tile_picker">Letra para pedra curinga</string>
+    <string name="use_timer">Habilitar cronômetro de jogo</string>
+    <string name="vs_join">\u0020vs.\u0020</string>
+    <string name="warn_nomobilef">O número %1$s para %2$s não é um
+    número \"móvel\". Importar mesmo assim?</string>
+    <string name="warn_sms_disabled">Jogar por SMS está desabilitado
+    atualmente, então nenhuma jogada será enviada para esse jogo.  (Se
+    você quiser habilitar jogos por SMS, vá para Configurações->Rede.)
+    </string>
+    <string name="warn_unlimited">Você tem certeza que este número tem
+    um plano de mensagens ilimitadas?  Clique cancelar se você não
+    tem.</string>
+    <string name="word_search_hint">Primeiras letras</string>
+    <string name="xlator">Felipe Medved Vieira</string>
+</resources>

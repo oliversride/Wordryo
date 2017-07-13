@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/scoreboardspacers" />
+
+    <!-- Note textSize set in code for 3 and 4 player games. -->
+    <com.oliversride.wordryo.ScoreView
+        android:id="@+id/score_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/scoreboard"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+        <LinearLayout
+            android:id="@+id/score_board_tophalf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/turn_indicator1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/indicator"
+                android:tint="@color/colour_turn_indicator" />
+
+            <TextView
+                android:id="@+id/score_player1_name"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:background="#000000FF"
+                android:ellipsize="marquee"
+                android:maxLines="1"
+                android:text="Name 1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/score_player1_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-8dip"
+                android:layout_toRightOf="@id/score_player1_name"
+                android:background="#00FF0000"
+                android:gravity="right"
+                android:minEms="2"
+                android:text="20"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/score_player1_pending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/score_player1_score"
+                android:background="#0000FF00"
+                android:minEms="2"
+                android:text="+2"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/turn_indicator3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-25dip"
+                android:src="@drawable/indicator"
+                android:tint="@color/colour_turn_indicator" />
+
+            <TextView
+                android:id="@+id/score_player3_name"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:background="#000000FF"
+                android:ellipsize="marquee"
+                android:maxLines="1"
+                android:text="Name 3"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/score_player3_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-8dip"
+                android:layout_toRightOf="@id/score_player3_name"
+                android:background="#00FF0000"
+                android:gravity="right"
+                android:minEms="2"
+                android:text="40"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/score_player3_pending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="-4dip"
+                android:layout_toRightOf="@id/score_player3_score"
+                android:background="#0000FF00"
+                android:minEms="2"
+                android:text="+4"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/score_board_bottomhalf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/score_board_tophalf"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/turn_indicator2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/indicator"
+                android:tint="@color/colour_turn_indicator" />
+
+            <TextView
+                android:id="@+id/score_player2_name"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:background="#000000FF"
+                android:ellipsize="marquee"
+                android:maxLines="1"
+                android:text="Name 2"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/score_player2_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-8dip"
+                android:layout_toRightOf="@id/score_player2_name"
+                android:background="#00FF0000"
+                android:gravity="right"
+                android:minEms="2"
+                android:text="30"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/score_player2_pending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/score_player2_score"
+                android:background="#0000FF00"
+                android:minEms="2"
+                android:text="+30"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/turn_indicator4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-25dip"
+                android:src="@drawable/indicator"
+                android:tint="@color/colour_turn_indicator" />
+
+            <TextView
+                android:id="@+id/score_player4_name"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:background="#000000FF"
+                android:ellipsize="marquee"
+                android:maxLines="1"
+                android:text="Name 4"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/score_player4_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-8dip"
+                android:layout_toRightOf="@id/score_player4_name"
+                android:background="#00FF0000"
+                android:gravity="right"
+                android:minEms="2"
+                android:text="500"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/score_player4_pending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="-4dip"
+                android:layout_toRightOf="@id/score_player4_score"
+                android:background="#00004400"
+                android:minEms="2"
+                android:text="+123"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </com.oliversride.wordryo.ScoreView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/scoreboardspacers" />
+
+    <com.oliversride.wordryo.BoardView
+        android:id="@+id/board_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/grid"
+        android:clickable="true"
+        android:drawSelectorOnTop="false"
+        android:focusable="true"
+        android:longClickable="true"
+        android:tag="layout-normal"></com.oliversride.wordryo.BoardView>
+
+    <LinearLayout
+        android:id="@+id/exchange_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grid"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/exchange_commit"
+            style="@style/spaced_buttons"
+            android:text="@string/button_trade_commit" />
+
+        <Button
+            android:id="@+id/exchange_cancel"
+            style="@style/spaced_buttons"
+            android:text="@string/button_trade_cancel" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/toolbar_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/prevhint_button_horizontal"
+                style="@style/toolbar_button"
+                android:src="@drawable/prev_hint" />
+
+            <ImageButton
+                android:id="@+id/nexthint_button_horizontal"
+                style="@style/toolbar_button"
+                android:src="@drawable/next_hint" />
+
+            <ImageButton
+                android:id="@+id/shuffle_button_horizontal"
+                style="@style/toolbar_button"
+                android:src="@drawable/shuffle" />
+
+            <ImageButton
+                android:id="@+id/zoom_button_horizontal"
+                style="@style/toolbar_button"
+                android:src="@drawable/zoom" />
+
+            <ImageButton
+                android:id="@+id/undo_button_horizontal"
+                style="@style/toolbar_button"
+                android:src="@drawable/undo" />
+
+            <ImageButton
+                android:id="@+id/values_button_horizontal"
+                style="@style/toolbar_button"
+                android:src="@drawable/values" />
+
+            <ImageButton
+                android:id="@+id/flip_button_horizontal"
+                style="@style/toolbar_button"
+                android:src="@drawable/flip" />
+
+            <ImageButton
+                android:id="@+id/dictlist_button_horizontal"
+                style="@style/toolbar_button"
+                android:src="@drawable/dicticon" />
+
+            <ImageButton
+                android:id="@+id/chat_button_horizontal"
+                style="@style/toolbar_button"
+                android:src="@drawable/stat_notify_chat" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

@@ -1,0 +1,197 @@
+
+{
+	"buildFiles" : 
+	[
+		"/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni/CMakeLists.txt"
+	],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"/Users/richard/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips --target clean"
+	],
+	"libraries" : 
+	{
+		"libxwjni-Release-mips" : 
+		{
+			"abi" : "mips",
+			"artifactName" : "libxwjni",
+			"buildCommand" : "/Users/richard/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips --target libxwjni",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni/xwjni.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni/utilwrapper.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni/drawwrapper.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni/xportwrapper.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni/anddict.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni/andutils.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni/jniutlswrapper.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/boarddrw.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/scorebdp.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/dragdrpp.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/pool.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/tray.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/dictnry.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/dictiter.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/mscore.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/vtabmgr.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/strutils.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/engine.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/board.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/mempool.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/game.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/server.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/model.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/comms.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/memstream.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/movestak.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				},
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/richard/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-mips -Dlibxwjni_EXPORTS  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/jni_common/dbgutil.c",
+					"workingDirectory" : "/Users/richard/StudioProjects/MyProjects/wordryo/.externalNativeBuild/cmake/mipsRelease/mips"
+				}
+			],
+			"output" : "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/cmake/mips/release/obj/mips/liblibxwjni.so",
+			"toolchain" : "13353342513621054563"
+		}
+	},
+	"toolchains" : 
+	{
+		"13353342513621054563" : 
+		{
+			"cCompilerExecutable" : "/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/richard/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}

@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-hdpi/btn_default_pressed.9.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-hdpi/btn_default_pressed.9.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-hdpi/app_wordryo.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-hdpi/app_wordryo.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-hdpi/btn_default_normal_disable_focused.9.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-hdpi/btn_default_normal_disable_focused.9.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-hdpi/list_pressed_holo_dark.9.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-hdpi/list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-hdpi/btn_default_selected.9.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-hdpi/btn_default_selected.9.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-hdpi/btn_default_normal_disable.9.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-hdpi/btn_default_normal_disable.9.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-hdpi/ic_menu_revert.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-hdpi/ic_menu_revert.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-hdpi/list_focused_holo.9.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-hdpi/list_focused_holo.9.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-hdpi/star5.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-hdpi/star5.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-hdpi/list_selector_disabled_holo_dark.9.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-hdpi/list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-hdpi/ic_menu_view.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-hdpi/ic_menu_view.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-hdpi/list_longpressed_holo.9.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-hdpi/list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-hdpi/ic_menu_notifications.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-hdpi/ic_menu_notifications.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-hdpi/ic_menu_delete.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-hdpi/ic_menu_delete.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-hdpi/ic_menu_refresh.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-hdpi/ic_menu_refresh.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-hdpi/btn_default_normal.9.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-hdpi/btn_default_normal.9.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-hdpi/ic_menu_info_details.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-hdpi/ic_menu_info_details.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-hdpi/ic_menu_mark.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-hdpi/ic_menu_mark.png"
+    }
+]

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="me_vs_android_height">78dp</dimen>
+    <dimen name="me_vs_android_width">100dp</dimen>
+    <dimen name="pass_and_play_height">100dp</dimen>
+    <dimen name="pass_and_play_width">78dp</dimen>
+    <dimen name="pass_and_play_zigzag">8dp</dimen>
+</resources>

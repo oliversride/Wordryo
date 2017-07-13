@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gamelistbkgnd"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="10"></ImageView>
+
+    <RelativeLayout
+        android:id="@+id/singleplayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true">
+
+        <View
+            android:id="@+id/me_vs_android"
+            android:layout_width="@dimen/me_vs_android_width"
+            android:layout_height="@dimen/me_vs_android_height"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/me_vs_android"
+            android:duplicateParentState="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/me_vs_android"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/landing_label_margintTop"
+            android:gravity="center"
+            android:text="@string/me_vs_android"
+            android:textColor="@color/landing_label"
+            android:textSize="@dimen/landing_label_text_size" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="7"></ImageView>
+
+    <RelativeLayout
+        android:id="@+id/twoplusplayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:layout_marginEnd="@dimen/pass_and_play_zigzag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/pass_and_play"
+                android:layout_width="@dimen/pass_and_play_width"
+                android:layout_height="@dimen/pass_and_play_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/pass_and_play"
+                android:duplicateParentState="true" />
+
+            <TextView
+                android:id="@+id/label_pass_and_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pass_and_play"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/landing_label_margintTop"
+                android:gravity="center"
+                android:paddingStart="@dimen/pass_and_play_zigzag"
+                android:text="@string/pass_and_play"
+                android:textColor="@color/landing_label"
+                android:textSize="@dimen/landing_label_text_size" />
+
+            <TextView
+                android:id="@+id/passandplayinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label_pass_and_play"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/landing_label"
+                android:textSize="18sp"
+                android:visibility="gone"></TextView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="10"></ImageView>
+
+    <!-- These are all "gone".-->
+    <LinearLayout
+        android:id="@+id/empty_games_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF202020"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/empty_games_list"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF202020"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/empty_games_list2" />
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/empty_list_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/empty_list_msg"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/new_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/new_game"
+            style="@style/spaced_buttons"
+            android:text="@string/button_new_game" />
+
+        <Button
+            android:id="@+id/new_group"
+            style="@style/spaced_buttons"
+            android:text="@string/button_new_group" />
+    </LinearLayout>
+
+</LinearLayout>

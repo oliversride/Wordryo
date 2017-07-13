@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-xhdpi/ic_menu_mark.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-xhdpi/ic_menu_mark.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-xhdpi/ubuntu.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-xhdpi/ubuntu.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-xhdpi/list_longpressed_holo.9.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-xhdpi/list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-xhdpi/list_pressed_holo_dark.9.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-xhdpi/list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-xhdpi/ic_menu_notifications.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-xhdpi/ic_menu_notifications.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-xhdpi/zoom_plus.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-xhdpi/zoom_plus.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-xhdpi/roundwhitekik.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-xhdpi/roundwhitekik.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-xhdpi/android.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-xhdpi/android.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-xhdpi/ic_menu_delete.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-xhdpi/ic_menu_delete.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-xhdpi/commit3.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-xhdpi/commit3.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-xhdpi/ic_menu_preferences.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-xhdpi/ic_menu_preferences.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-xhdpi/list_selector_disabled_holo_dark.9.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-xhdpi/list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-xhdpi/app_wordryo.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-xhdpi/app_wordryo.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-xhdpi/list_focused_holo.9.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-xhdpi/list_focused_holo.9.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-xhdpi/mevsandroid.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-xhdpi/mevsandroid.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-xhdpi/person.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-xhdpi/person.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-xhdpi/zoom_minus.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-xhdpi/zoom_minus.png"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/drawable-xhdpi/kikbutton.png",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/drawable-xhdpi/kikbutton.png"
+    }
+]

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="landing_label_margintTop">16dp</dimen>
+    <dimen name="landing_label_text_size">32sp</dimen>
+    <dimen name="me_vs_android_height">232dp</dimen>
+    <dimen name="me_vs_android_width">240dp</dimen>
+    <dimen name="pass_and_play_height">240dp</dimen>
+    <dimen name="pass_and_play_width">232dp</dimen>
+    <dimen name="pass_and_play_zigzag">20dp</dimen>
+    <style name="toolbar_button">
+      <item name="android:layout_width">wrap_content</item>
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:layout_weight">1</item>
+    </style>
+</resources>

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/color/landing_label.xml",
+        "source": "/Users/richard/StudioProjects/MyProjects/wordryo/src/main/res/color/landing_label.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/color/common_google_signin_btn_tint.xml",
+        "source": "/Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/Users/richard/StudioProjects/MyProjects/wordryo/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/richard/.android/build-cache/8ff148d768610bb15021b16c28d64092515a05b1/output/res/color/common_google_signin_btn_text_light.xml"
+    }
+]

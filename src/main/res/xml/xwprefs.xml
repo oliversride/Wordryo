@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/preferences">
+
+    <PreferenceCategory android:title="@string/me_vs_android">
+        <com.oliversride.wordryo.PrefAndroidPlayLevel
+            android:defaultValue="0"
+            android:key="androidplaylevel"
+            android:summary="summary"
+            android:title="@string/androidplaylevel"
+            android:widgetLayout="@layout/pref_playlevel" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pandp_settings">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/key_init_hintsallowed"
+            android:summary="@string/hints_allowed_sum"
+            android:title="@string/hints_allowed" />
+        <com.oliversride.wordryo.PrefNumberOfPlayers
+            android:defaultValue="2"
+            android:key="numberofplayers"
+            android:summary="summary"
+            android:title="@string/pandp_numplayers"
+            android:widgetLayout="@layout/pref_players" />
+        <com.oliversride.wordryo.XWEditTextPreference
+            android:capitalize="words"
+            android:defaultValue=""
+            android:key="@string/key_player1_name"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_player1_name" />
+        <com.oliversride.wordryo.XWEditTextPreference
+            android:capitalize="words"
+            android:enabled="false"
+            android:key="@string/key_player2_name"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/tell_unused"
+            android:title="@string/pref_player2_name" />
+        <com.oliversride.wordryo.XWEditTextPreference
+            android:capitalize="words"
+            android:defaultValue=""
+            android:enabled="false"
+            android:key="@string/key_player3_name"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/tell_unused"
+            android:title="@string/pref_player3_name" />
+        <com.oliversride.wordryo.XWEditTextPreference
+            android:capitalize="words"
+            android:defaultValue=""
+            android:enabled="false"
+            android:key="@string/key_player4_name"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/tell_unused"
+            android:title="@string/pref_player4_name" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/general_settings">
+        <com.oliversride.wordryo.PrefImmersive
+            android:defaultValue="0"
+            android:key="immersive"
+            android:summary="summary"
+            android:title="@string/immersive"
+            android:widgetLayout="@layout/pref_immersive" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/key_keep_screenon"
+            android:summary="@string/keep_screenon_summary"
+            android:title="@string/keep_screenon" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="warnunknownword"
+            android:summary="@string/not_in_dictionary"
+            android:title="@string/warn_unknown" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="zoomondrop"
+            android:summary="@string/zoom_summary"
+            android:title="@string/zoom_on_drop" />
+    </PreferenceCategory>
+
+    <!-- Hidden by PrefsActivity (defaultValues allow for hooking into dictionary choosing code). -->
+    <PreferenceScreen
+        android:key="ps_word_lists"
+        android:summary="@string/prefs_dicts_summary"
+        android:title="@string/prefs_dicts">
+        <com.oliversride.wordryo.DictListPreference
+            android:defaultValue="CollegeEng_2to8"
+            android:key="@string/key_default_dict"
+            android:title="@string/default_dict" />
+
+        <com.oliversride.wordryo.DictListPreference
+            android:defaultValue="Top5000"
+            android:key="@string/key_default_robodict"
+            android:title="@string/default_robodict" />
+    </PreferenceScreen>
+
+    <!--
+    <PreferenceScreen android:title="@string/prefs_defaults"
+                    android:summary="@string/prefs_defaults_summary"
+                    >
+
+    <PreferenceScreen android:title="@string/prefs_names"
+                      android:summary="@string/prefs_names_summary"
+                      >
+
+      <com.oliversride.wordryo.XWEditTextPreference
+         android:key="@string/key_player1_name"
+         android:title="@string/pref_player1_name"
+         android:capitalize="words"
+         android:defaultValue=""
+         />
+      <com.oliversride.wordryo.XWEditTextPreference
+         android:key="@string/key_player2_name"
+         android:title="@string/pref_player2_name"
+         android:capitalize="words"
+         android:defaultValue="ignored"
+         android:summary="@string/tell_unused"
+         android:enabled="false"
+         />
+      <com.oliversride.wordryo.XWEditTextPreference
+         android:key="@string/key_player3_name"
+         android:title="@string/pref_player3_name"
+         android:capitalize="words"
+         android:defaultValue=""
+         android:summary="@string/tell_unused"
+         android:enabled="false"
+         />
+      <com.oliversride.wordryo.XWEditTextPreference
+         android:key="@string/key_player4_name"
+         android:title="@string/pref_player4_name"
+         android:capitalize="words"
+         android:defaultValue=""
+         android:summary="@string/tell_unused"
+         android:enabled="false"
+         />
+    </PreferenceScreen>
+
+    <PreferenceScreen android:title="@string/prefs_dicts"
+                      android:summary="@string/prefs_dicts_summary"
+                      >
+      <com.oliversride.wordryo.DictListPreference
+         android:key="@string/key_default_dict"
+         android:title="@string/default_dict"
+         android:defaultValue="CollegeEng_2to8"
+         />
+
+      <com.oliversride.wordryo.DictListPreference
+         android:key="@string/key_default_robodict"
+         android:title="@string/default_robodict"
+         android:defaultValue="Top5000"
+         />
+    </PreferenceScreen>
+
+    <CheckBoxPreference android:key="@string/key_init_hintsallowed"
+                        android:title="@string/hints_allowed"
+                        android:summary="@string/hints_allowed_sum"
+                        android:defaultValue="true"
+                        />
+
+    <CheckBoxPreference android:key="@string/key_init_nethintsallowed"
+                        android:title="@string/nethints_allowed"
+                        android:summary="@string/nethints_allowed_sum"
+                        android:defaultValue="true"
+                        />
+
+    <CheckBoxPreference android:key="@string/key_init_autojuggle"
+                        android:title="@string/init_autojuggle"
+                        android:summary="@string/init_autojuggle_sum"
+                        android:defaultValue="false"
+                        />
+
+    <com.oliversride.wordryo.XWListPreference
+       android:key="@string/key_default_phonies"
+       android:title="@string/default_phonies"
+       android:entries="@array/phony_names"
+       android:entryValues="@array/phony_names"
+       android:defaultValue="@string/phonies_warn"
+       />
+
+    <CheckBoxPreference android:key="@string/key_default_timerenabled"
+                        android:title="@string/use_timer"
+                        android:defaultValue="false"
+                        />
+
+    <com.oliversride.wordryo.XWEditTextPreference
+       android:key="@string/key_initial_player_minutes"
+       android:title="@string/initial_player_minutes"
+       android:defaultValue="25"
+       android:numeric="decimal"
+       />
+
+    <com.oliversride.wordryo.XWListPreference
+       android:key="@string/key_board_size"
+       android:title="@string/board_size"
+       android:entries="@array/board_sizes"
+       android:entryValues="@array/board_sizes"
+       android:defaultValue="15x15"
+       />
+
+  </PreferenceScreen>
+
+  <PreferenceScreen android:title="@string/prefs_appearance"
+                    android:summary="@string/prefs_appearance_summary"
+                    >
+    <com.oliversride.wordryo.XWListPreference
+       android:key="@string/key_summary_field"
+       android:title="@string/summary_field"
+       android:entries="@array/game_summary_values"
+       android:entryValues="@array/game_summary_values"
+       android:defaultValue="@string/game_summary_field_opponents"
+       />
+    <CheckBoxPreference android:key="@string/key_hide_intro"
+                        android:title="@string/hide_intro"
+                        android:summary="@string/hide_intro_summary"
+                        android:defaultValue="false"
+                        />
+    <CheckBoxPreference android:key="@string/key_hide_title"
+                        android:title="@string/hide_title"
+                        android:summary="@string/hide_title_summary"
+                        android:defaultValue="true"
+                        />
+    <CheckBoxPreference android:key="@string/key_show_arrow"
+                        android:title="@string/show_arrow"
+                        android:summary="@string/show_arrow_summary"
+                        android:defaultValue="true"
+                        />
+    <CheckBoxPreference android:key="@string/key_square_tiles"
+                        android:title="@string/square_tiles"
+                        android:summary="@string/square_tiles_summary"
+                        android:defaultValue="false"
+                        />
+    <CheckBoxPreference android:key="@string/key_keep_screenon"
+                        android:title="@string/keep_screenon"
+                        android:summary="@string/keep_screenon_summary"
+                        android:defaultValue="false"
+                        />
+
+    <PreferenceScreen android:title="@string/prefs_colors"
+                      android:summary="@string/prefs_colors_summary"
+                      >
+      <com.oliversride.wordryo.EditColorPreference
+         android:key="@string/key_player0"
+         android:title="@string/player0"
+         android:defaultValue="0x000000"
+         />
+      <com.oliversride.wordryo.EditColorPreference
+         android:key="@string/key_player1"
+         android:title="@string/player1"
+         android:defaultValue="0xFF0000"
+         />
+      <com.oliversride.wordryo.EditColorPreference
+         android:key="@string/key_player2"
+         android:title="@string/player2"
+         android:defaultValue="0x0000FF"
+         />
+      <com.oliversride.wordryo.EditColorPreference
+         android:key="@string/key_player3"
+         android:title="@string/player3"
+         android:defaultValue="0x008F00"
+         />
+      <com.oliversride.wordryo.EditColorPreference
+         android:key="@string/key_bonus_l2x"
+         android:title="@string/bonus_l2x"
+         android:defaultValue="0xAFAF00"
+         />
+      <com.oliversride.wordryo.EditColorPreference
+         android:key="@string/key_bonus_l3x"
+         android:title="@string/bonus_l3x"
+         android:defaultValue="0x00AFAF"
+         />
+      <com.oliversride.wordryo.EditColorPreference
+         android:key="@string/key_bonus_w2x"
+         android:title="@string/bonus_w2x"
+         android:defaultValue="0xAF00AF"
+         />
+      <com.oliversride.wordryo.EditColorPreference
+         android:key="@string/key_bonus_w3x"
+         android:title="@string/bonus_w3x"
+         android:defaultValue="0xAFAFAF"
+         />
+
+      <com.oliversride.wordryo.EditColorPreference
+         android:key="@string/key_clr_crosshairs"
+         android:title="@string/clr_crosshairs"
+         android:defaultValue="0x7070FF"
+         />
+
+      <com.oliversride.wordryo.EditColorPreference
+         android:key="@string/key_clr_bonushint"
+         android:title="@string/key_bonushint"
+         android:defaultValue="0x7F7F7F"
+         />
+
+      <com.oliversride.wordryo.EditColorPreference
+         android:key="@string/key_tile_back"
+         android:title="@string/tile_back"
+         android:defaultValue="0xFFFF99"
+         />
+      <com.oliversride.wordryo.EditColorPreference
+         android:key="@string/key_empty"
+         android:title="@string/empty"
+         android:defaultValue="0xFFFFFF"
+         />
+
+      <com.oliversride.wordryo.EditColorPreference
+         android:key="@string/key_background"
+         android:title="@string/background"
+         android:defaultValue="0xFFFFFF"
+         />
+    </PreferenceScreen>
+
+  </PreferenceScreen>
+
+  <PreferenceScreen android:title="@string/prefs_behavior"
+                    android:summary="@string/prefs_behavior_summary"
+                    >
+    <CheckBoxPreference android:key="@string/key_explain_robot"
+                        android:title="@string/explain_robot"
+                        android:summary="@string/explain_robot_summary"
+                        android:defaultValue="true"
+                        />
+    <CheckBoxPreference android:key="@string/key_skip_confirm"
+                        android:title="@string/skip_confirm_turn"
+                        android:summary="@string/skip_confirm_turn_summary"
+                        android:defaultValue="false"
+                        />
+    <CheckBoxPreference android:key="@string/key_default_loc"
+                        android:title="@string/default_loc"
+                        android:summary="@string/default_loc_summary"
+                        android:defaultValue="true"
+                        />
+    <CheckBoxPreference android:key="@string/key_sort_tiles"
+                        android:title="@string/title_sort_tiles"
+                        android:summary="@string/summary_sort_tiles"
+                        android:defaultValue="true"
+                        />
+    <CheckBoxPreference android:key="@string/key_ringer_zoom"
+                        android:title="@string/ringer_zoom"
+                        android:summary="@string/ringer_zoom_summary"
+                        android:defaultValue="false"
+                        />
+    <CheckBoxPreference android:key="@string/key_hide_crosshairs"
+                        android:title="@string/hide_crosshairs"
+                        android:summary="@string/hide_crosshairs_summary"
+                        android:defaultValue="false"
+                        />
+    <CheckBoxPreference android:key="@string/key_peek_other"
+                        android:title="@string/peek_other"
+                        android:summary="@string/peek_other_summary"
+                        android:defaultValue="false"
+                        />
+  </PreferenceScreen>
+
+  <PreferenceScreen android:title="@string/network_behavior"
+                    android:summary="@string/network_behavior_summary"
+                    >
+    <com.oliversride.wordryo.SMSCheckBoxPreference
+        android:key="@string/key_enable_sms"
+        android:title="@string/enable_sms"
+        android:summary="@string/enable_sms_summary"
+        android:defaultValue="false"
+        />
+    <com.oliversride.wordryo.PollListPreference
+       android:key="@string/key_connect_frequency"
+       android:title="@string/connect_frequency"
+       android:entries="@array/connect_frequencies"
+       android:entryValues="@array/connect_frequencies_values"
+       android:defaultValue="900"
+       />
+
+    <CheckBoxPreference android:key="@string/key_notify_sound"
+                        android:title="@string/notify_sound"
+                        android:summary="@string/notify_other_summary"
+                        android:defaultValue="true"
+                        />
+    <CheckBoxPreference android:key="@string/key_notify_vibrate"
+                        android:title="@string/notify_vibrate"
+                        android:summary="@string/notify_other_summary"
+                        android:defaultValue="false"
+                        />
+  </PreferenceScreen>
+
+  <PreferenceScreen android:title="@string/advanced"
+                    android:summary="@string/advanced_summary"
+                    >
+    <EditTextPreference android:title="@string/git_rev_title"
+                        android:summary="@string/git_rev"
+                        android:enabled="false"
+                        />
+    <CheckBoxPreference android:key="@string/key_logging_on"
+                        android:title="@string/logging_on"
+                        android:defaultValue="false"
+                        />
+    <CheckBoxPreference android:key="@string/key_enable_debug"
+                        android:title="Enable debug features"
+                        android:summary="Menuitems etc."
+                        android:defaultValue="false"
+                        />
+
+    <com.oliversride.wordryo.XWEditTextPreference
+        android:key="@string/key_download_path"
+        android:title="@string/download_path_title"
+        />
+    <CheckBoxPreference android:key="@string/key_show_sms"
+                        android:title="Show SMS sends, receives"
+                        android:defaultValue="false"
+                        />
+    <com.oliversride.wordryo.XWEditTextPreference
+       android:key="@string/key_relay_host"
+       android:title="@string/relay_host"
+       android:defaultValue="@string/default_host"
+       />
+    <com.oliversride.wordryo.XWEditTextPreference
+       android:key="@string/key_relay_port"
+       android:title="@string/relay_port"
+       android:defaultValue="10997"
+       android:numeric="decimal"
+       />
+    <com.oliversride.wordryo.XWEditTextPreference
+       android:key="@string/key_proxy_port"
+       android:title="@string/proxy_port"
+       android:defaultValue="10998"
+       android:numeric="decimal"
+       />
+
+    <com.oliversride.wordryo.XWEditTextPreference
+       android:key="@string/key_dict_host"
+       android:title="@string/dict_host"
+       android:defaultValue="@string/dict_url"
+       />
+
+    <com.oliversride.wordryo.XWEditTextPreference
+       android:key="@string/key_update_url"
+       android:title="@string/expl_update_url"
+       android:defaultValue="@string/default_update_url"
+       />
+    <CheckBoxPreference android:key="@string/key_update_prerel"
+                        android:title="Update between releases"
+                        android:summary="Get intermediate builds"
+                        android:defaultValue="false"
+                        />
+  </PreferenceScreen>
+   -->
+</PreferenceScreen>
