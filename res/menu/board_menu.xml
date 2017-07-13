@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+			
+  <group android:id="@+id/group_done">
+    <!-- title set in BoardActivity -->
+    <!--
+    <item android:id="@+id/board_menu_done"
+          android:alphabeticShortcut="D" />
+    -->
+    <item android:id="@+id/board_menu_trade"
+		android:icon="@drawable/ic_menu_refresh"
+		android:title="@string/board_menu_trade"
+		android:alphabeticShortcut="T" />
+	<item android:id="@+id/commit"
+	    android:icon="@drawable/ic_menu_mark"
+		android:alphabeticShortcut="D"
+		android:title="@string/commit" />
+  </group>
+
+  <item android:id="@+id/zoom_plus_minus"
+      android:showAsAction="ifRoom"
+      android:icon="@drawable/zoom_plus"
+      android:title="@string/zoom_plus" />
+  
+	<!--
+	<item android:id="@+id/board_menu_undo_last"
+          android:title="@string/board_menu_undo_last"
+          android:alphabeticShortcut="U" />
+	-->
+	<item android:id="@+id/go_back"
+	    android:icon="@drawable/ic_menu_revert"
+	    android:alphabeticShortcut="U"
+		android:title="@string/go_back" />
+
+	<item android:id="@+id/give_hint"
+	    android:icon="@drawable/ic_menu_notifications"
+	    android:title="@string/give_hint" />
+	
+	<item android:id="@+id/board_menu_tray"
+        android:icon="@drawable/ic_menu_view" />
+
+    <item
+        android:icon="@drawable/ic_menu_info_details" 
+        android:title="@string/board_submenu_game">
+      <menu>
+        <item android:id="@+id/board_menu_game_counts"
+              android:title="@string/board_menu_game_counts" />
+        <item android:id="@+id/board_menu_game_left"
+              android:title="@string/board_menu_game_left" />
+        <item android:id="@+id/board_menu_game_history"
+              android:title="@string/board_menu_game_history" />
+        <!--
+        <item android:id="@+id/board_menu_game_resign"
+              android:title="@string/board_menu_game_resign" />
+        <item android:id="@+id/board_menu_game_resend"
+              android:title="@string/board_menu_game_resend" />
+        -->
+      </menu>
+    </item>
+
+   <item android:id="@+id/delete_game"
+      android:icon="@drawable/ic_menu_delete"
+      android:title="@string/delete_game" />
+    
+    <!--
+    <item android:id="@+id/gamel_menu_checkmoves"
+          android:title="@string/gamel_menu_checkmoves"
+          />
+    <item android:id="@+id/board_menu_file_prefs"
+          android:title="@string/menu_prefs"
+          android:alphabeticShortcut="P"
+          />
+    <item android:id="@+id/board_menu_file_about"
+          android:title="@string/board_menu_file_about"
+          android:alphabeticShortcut="A" />
+	-->
+	
+</menu>
